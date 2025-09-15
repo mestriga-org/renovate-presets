@@ -1,3 +1,17 @@
 {
-
+	"extends": [
+		":dependencyDashboardApproval"
+	],
+	"mode":"full",
+	"packageRules": [
+		{
+			"matchDatasources": [
+				"terraform-module",
+				"terraform-provider"
+			],
+			"registryUrls": [
+				"https://registry.opentofu.org"
+			]
+		}
+	]
 }
