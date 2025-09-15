@@ -3,7 +3,7 @@
 		{
 			"fileMatch": [
 				"/default.json",
-				"/org-inherited-config.json"
+				"/org-inherited-config.json",
 			],
 			"url": "https://docs.renovatebot.com/renovate-schema.json",
 		},

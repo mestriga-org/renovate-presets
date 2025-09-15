@@ -1,6 +1,28 @@
 {
 	"extends": [
 		"config:best-practices",
-		":approveMajorUpdates"
+		":approveMajorUpdates",
+		":maintainLockFilesWeekly",
+		"npm:unpublishSafe"
+	],
+	"labels": [
+		"dependencies"
+	],
+	"osvVulnerabilityAlerts": true,
+	"vulnerabilityAlerts": {
+		"addLabels": [
+			"security"
+		]
+  },
+	"packageRules": [
+		{
+			"matchDatasources": [
+				"terraform-module",
+				"terraform-provider"
+			],
+			"registryUrls": [
+				"https://registry.opentofu.org"
+			]
+		}
 	]
 }

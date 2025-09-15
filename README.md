@@ -1,14 +1,9 @@
 https://docs.renovatebot.com/config-overview/#changing-default-behaviors
 
+# now missing lockfilemaintenance (indirect dependencies)
+# automerge
 
-lockFileMaintenance (what about partial versions?)
-rangeStrategy
-
-schedule
-mode: full
-
-automerge with minimum release age of 14 days
-
-config:js-app
-config:js-lib
-osv security
+// forked repo processing
+// grouping and lock file commit message action
+// automerging with minimum release age of 14 days
+// versioning strategy
