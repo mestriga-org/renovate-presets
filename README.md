@@ -7,3 +7,6 @@ https://docs.renovatebot.com/config-overview/#changing-default-behaviors
 // grouping and lock file commit message action
 // automerging with minimum release age of 14 days
 // versioning strategy
+// autoApprove and renovate-approve app
+// stale pr rebasing
+// GitHub branch protection
