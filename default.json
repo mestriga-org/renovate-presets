@@ -6,8 +6,7 @@
 		":automergeMinor",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
-		":rebaseStalePrs",
-		"group:allNonMajor"
+		":rebaseStalePrs"
 	],
 	"hostRules": [
 		{
@@ -20,6 +19,11 @@
 	],
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
+		{
+			"matchManagers": ["npm"],
+			"matchDepTypes": ["!packageManager"],
+			"groupName": "NPM dependencies"
+		},
 		{
 			"matchDatasources": [
 				"terraform-module",
