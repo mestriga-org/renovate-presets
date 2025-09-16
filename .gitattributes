@@ -1,0 +1,8 @@
+* text
+* whitespace=indent-with-non-tab,tabwidth=2
+* working-tree-encoding=UTF-8
+
+*.md whitespace=indent-with-non-tab,tabwidth=4
+
+package.json   eol=lf
+pnpm-lock.yaml eol=lf whitespace=tab-in-indent,tabwidth=2

@@ -4,3 +4,9 @@ indent_style = tab
 
 [*.md]
 indent_size = 4
+
+[{package.json,pnpm-lock.yaml}]
+end_of_line = lf
+
+[pnpm-lock.yaml]
+indent_style = space
