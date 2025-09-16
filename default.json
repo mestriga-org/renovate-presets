@@ -20,11 +20,6 @@
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
-			"matchManagers": ["npm"],
-			"matchDepTypes": ["!packageManager"],
-			"groupName": "node dependencies"
-		},
-		{
 			"matchDatasources": [
 				"terraform-module",
 				"terraform-provider"
@@ -32,6 +27,11 @@
 			"registryUrls": [
 				"https://registry.opentofu.org"
 			]
+		},
+		{
+			"groupName": "node dependencies",
+			"matchDepTypes": ["!packageManager"],
+			"matchManagers": ["npm"]
 		}
 	],
 	"platformAutomerge": false,
