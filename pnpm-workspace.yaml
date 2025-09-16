@@ -1,4 +1,6 @@
+enableGlobalVirtualStore: true
 hoist: false
 ignorePnpmfile: true
+nodeLinker: pnp
 packageManagerStrictVersion: true
 strictPeerDependencies: true
