@@ -22,7 +22,7 @@
 		{
 			"matchManagers": ["npm"],
 			"matchDepTypes": ["!packageManager"],
-			"groupName": "NPM dependencies"
+			"groupName": "node dependencies"
 		},
 		{
 			"matchDatasources": [
