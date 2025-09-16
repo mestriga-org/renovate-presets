@@ -1,0 +1,4 @@
+hoist: false
+ignorePnpmfile: true
+packageManagerStrictVersion: true
+strictPeerDependencies: true
