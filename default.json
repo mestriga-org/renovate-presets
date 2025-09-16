@@ -10,6 +10,11 @@
 		":rebaseStalePrs",
 		"group:allNonMajor"
 	],
+	"hostRules": [
+		{
+			"abortOnError": true
+		}
+	],
 	"internalChecksAsSuccess": true,
 	"labels": [
 		"dependencies"
