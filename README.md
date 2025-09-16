@@ -1,5 +1,6 @@
 https://docs.renovatebot.com/config-overview/#changing-default-behaviors
 
+// todo hostrules
 // automerging with minimum release age of 14 days (or npm:unpublishSafe)
 // notifications
 // versioning strategy

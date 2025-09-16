@@ -10,6 +10,7 @@
 		":rebaseStalePrs",
 		"group:allNonMajor"
 	],
+	"internalChecksAsSuccess": true,
 	"labels": [
 		"dependencies"
 	],
