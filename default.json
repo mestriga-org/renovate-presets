@@ -12,11 +12,6 @@
 		"dependencies"
 	],
 	"osvVulnerabilityAlerts": true,
-	"vulnerabilityAlerts": {
-		"addLabels": [
-			"security"
-		]
-  },
 	"packageRules": [
 		{
 			"matchDatasources": [
@@ -28,5 +23,10 @@
 			]
 		}
 	],
+	"vulnerabilityAlerts": {
+		"addLabels": [
+			"security"
+		]
+	},
 	"prHourlyLimit": 10
 }
