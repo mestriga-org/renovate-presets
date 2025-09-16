@@ -2,6 +2,7 @@
 	"extends": [
 		"config:best-practices",
 		":approveMajorUpdates",
+		":automergePatch",
 		":maintainLockFilesWeekly",
 		"npm:unpublishSafe"
 	],
