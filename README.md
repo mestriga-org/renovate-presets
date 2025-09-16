@@ -9,4 +9,4 @@ https://docs.renovatebot.com/config-overview/#changing-default-behaviors
 // versioning strategy
 // autoApprove and renovate-approve app
 // stale pr rebasing
-// GitHub branch protection
+// note: platform automerge not available for free private repos
