@@ -6,6 +6,7 @@
 		":automergeBranch",
 		":automergePatch",
 		":maintainLockFilesWeekly",
+		":prHourlyLimitNone",
 		"npm:unpublishSafe"
 	],
 	"labels": [
@@ -27,6 +28,5 @@
 		"addLabels": [
 			"security"
 		]
-	},
-	"prHourlyLimit": 10
+	}
 }
