@@ -2,11 +2,13 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:best-practices",
+		":approveMajorUpdates",
 		":automergeBranch",
 		":automergePatch",
 		":automergeStableNonMajor",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
+		":rebaseStalePrs",
 		"group:allNonMajor",
 		"npm:unpublishSafe"
 	],
