@@ -3,7 +3,8 @@
 	"extends": [
 		"config:best-practices",
 		":automergeBranch",
-		":automergeMinor",
+		":automergePatch",
+		":automergeStableNonMajor",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
 		"group:allNonMajor",
