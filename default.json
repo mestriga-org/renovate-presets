@@ -4,9 +4,10 @@
 		"config:best-practices",
 		":approveMajorUpdates",
 		":automergeBranch",
-		":automergePatch",
+		":automergeMinor",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
+		"group:allNonMajor",
 		"npm:unpublishSafe"
 	],
 	"labels": [
