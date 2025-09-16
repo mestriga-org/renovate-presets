@@ -9,8 +9,7 @@
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
 		":rebaseStalePrs",
-		"group:allNonMajor",
-		"npm:unpublishSafe"
+		"group:allNonMajor"
 	],
 	"labels": [
 		"dependencies"
@@ -27,6 +26,7 @@
 			]
 		}
 	],
+	"platformAutomerge": false,
 	"vulnerabilityAlerts": {
 		"addLabels": [
 			"security"
