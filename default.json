@@ -3,6 +3,7 @@
 	"extends": [
 		"config:best-practices",
 		":approveMajorUpdates",
+		":automergeBranch",
 		":automergePatch",
 		":maintainLockFilesWeekly",
 		"npm:unpublishSafe"
@@ -26,5 +27,6 @@
 				"https://registry.opentofu.org"
 			]
 		}
-	]
+	],
+	"prHourlyLimit": 10
 }
