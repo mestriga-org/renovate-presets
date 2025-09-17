@@ -5,5 +5,6 @@
 *.md   whitespace=indent-with-non-tab,tabwidth=4
 *.yaml whitespace=tab-in-indent,tabwidth=2
 
-/package.json   eol=lf
-/pnpm-lock.yaml eol=lf
+/package.json        eol=lf
+/pnpm-lock.yaml      eol=lf
+/pnpm-workspace.yaml eol=lf
