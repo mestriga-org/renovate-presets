@@ -5,39 +5,30 @@
 		":approveMajorUpdates",
 		":automergeMinor",
 		":maintainLockFilesWeekly",
-		":prHourlyLimitNone",
-		":rebaseStalePrs"
+		":prHourlyLimitNone"
 	],
 	"hostRules": [
-		{
-			"abortOnError": true
-		}
+		{ "abortOnError": true }
 	],
 	"internalChecksAsSuccess": true,
-	"labels": [
-		"dependencies"
-	],
+	"labels": ["dependencies"],
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
-			"matchDatasources": [
-				"terraform-module",
-				"terraform-provider"
-			],
-			"registryUrls": [
-				"https://registry.opentofu.org"
-			]
+			// defaults terraform modules and providers to OpenTofu registry
+			"matchDatasources": ["terraform-{module,provider}"],
+			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
+			// groups NPM dependencies to prevent breaking peer requirements
 			"groupName": "node dependencies",
 			"matchDepTypes": ["!packageManager"],
 			"matchManagers": ["npm"]
 		}
 	],
+	// ensures consistent behavior without configuration of branch protection rules and when rebaseWhen=auto
 	"platformAutomerge": false,
 	"vulnerabilityAlerts": {
-		"addLabels": [
-			"security"
-		]
+		"addLabels": ["security"]
 	}
 }
