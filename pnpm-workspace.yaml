@@ -1,11 +1,6 @@
 enableGlobalVirtualStore: true
-
 hoist: false
-
 ignoreDepScripts: false
-
 ignorePnpmfile: true
-
 packageManagerStrictVersion: true
-
 strictPeerDependencies: true
