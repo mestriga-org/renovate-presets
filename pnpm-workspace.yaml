@@ -1,6 +1,13 @@
 enableGlobalVirtualStore: true
+
 hoist: false
+
+ignoreDepScripts: false
+
 ignorePnpmfile: true
+
 nodeLinker: pnp
+
 packageManagerStrictVersion: true
+
 strictPeerDependencies: true
