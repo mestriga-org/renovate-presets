@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "corepack-up",
+			"type": "shell",
+			"command": "corepack",
+			"args": ["up"],
+			"problemMatcher": [],
+		},
+		{
+			"label": "npm-update",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"update",
+			],
+			"problemMatcher": [],
+		},
+		{
+			"label": "npm-outdated",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"outdated",
+			],
+			"problemMatcher": [],
+		},
+	],
+}
