@@ -1,3 +1,4 @@
+// https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/blob/main/renovate-common.json
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
@@ -5,7 +6,8 @@
 		":approveMajorUpdates",
 		":automergeMinor",
 		":maintainLockFilesWeekly",
-		":prHourlyLimitNone"
+		":prHourlyLimitNone",
+		"npm:unpublishSafe"
 	],
 	"hostRules": [
 		{ "abortOnError": true }
