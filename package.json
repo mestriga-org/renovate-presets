@@ -12,7 +12,7 @@
 	},
 	"scripts": {
 		"lint": "pnpm run /^lint:/",
-		"lint:js": "eslint --cache --cache-location node_modules/.cache/eslint/"
+		"lint:js": "eslint --cache --cache-strategy content --cache-location node_modules/.cache/eslint/"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "5.3.0",
