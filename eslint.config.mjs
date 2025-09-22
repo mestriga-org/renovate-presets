@@ -2,13 +2,14 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu(
 	{
-		type: 'lib',
+		pnpm: true,
 		stylistic: {
 			indent: 'tab',
 			overrides: {
 				'style/quote-props': ['error', 'as-needed'],
 			},
 		},
+		type: 'lib',
 	},
 	{
 		files: ['package.json'],
