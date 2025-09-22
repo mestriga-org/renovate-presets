@@ -7,5 +7,6 @@ enableGlobalVirtualStore: true
 hoist: false
 ignoreDepScripts: false
 ignorePnpmfile: true
+minimumReleaseAge: 4320
 packageManagerStrictVersion: true
 strictPeerDependencies: true
