@@ -7,7 +7,7 @@
 		":automergeMinor",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
-		"npm:unpublishSafe"
+		"security:minimumReleaseAgeNpm"
 	],
 	"hostRules": [
 		{ "abortOnError": true }
