@@ -5,6 +5,7 @@
 		"config:best-practices",
 		":approveMajorUpdates",
 		":automergeMinor",
+		":configMigration",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
 		"security:minimumReleaseAgeNpm"
