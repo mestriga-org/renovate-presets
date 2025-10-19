@@ -2,28 +2,24 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "corepack-up",
+			"label": "pnpm-self-update",
 			"type": "shell",
-			"command": "corepack",
-			"args": ["up"],
+			"command": "pnpm",
+			"args": ["self-update"],
 			"problemMatcher": [],
 		},
 		{
-			"label": "npm-update",
+			"label": "pnpm-update",
 			"type": "shell",
 			"command": "pnpm",
-			"args": [
-				"update",
-			],
+			"args": ["update"],
 			"problemMatcher": [],
 		},
 		{
-			"label": "npm-outdated",
+			"label": "pnpm-outdated",
 			"type": "shell",
 			"command": "pnpm",
-			"args": [
-				"outdated",
-			],
+			"args": ["outdated"],
 			"problemMatcher": [],
 		},
 	],
