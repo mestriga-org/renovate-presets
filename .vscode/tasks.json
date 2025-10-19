@@ -3,21 +3,18 @@
 	"tasks": [
 		{
 			"label": "pnpm-self-update",
-			"type": "shell",
 			"command": "pnpm",
 			"args": ["self-update"],
 			"problemMatcher": [],
 		},
 		{
 			"label": "pnpm-update",
-			"type": "shell",
 			"command": "pnpm",
 			"args": ["update"],
 			"problemMatcher": [],
 		},
 		{
 			"label": "pnpm-outdated",
-			"type": "shell",
 			"command": "pnpm",
 			"args": ["outdated"],
 			"problemMatcher": [],
