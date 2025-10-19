@@ -1,9 +1,5 @@
 hoist: false
 
-ignoreDepScripts: false
-
-ignorePnpmfile: true
-
 minimumReleaseAge: 4320
 
 strictPeerDependencies: true
