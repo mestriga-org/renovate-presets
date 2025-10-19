@@ -8,6 +8,11 @@
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm"
+		},
+		"runtime": {
+			"name": "node",
+			"version": "25",
+			"onFail": "download"
 		}
 	},
 	"scripts": {
