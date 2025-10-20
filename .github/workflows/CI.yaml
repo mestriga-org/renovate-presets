@@ -26,7 +26,7 @@ jobs:
           exec git diff-index --cached --check "$parent"
       - run: |
           set -Cfu
-          exec git ls-files -eol
+          exec git ls-files --eol
 
   test:
     runs-on: ubuntu-latest
