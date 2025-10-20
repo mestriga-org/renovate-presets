@@ -19,6 +19,7 @@ jobs:
           sparse-checkout: '!/'
           sparse-checkout-cone-mode: false
       - run: |
+          set -Cfu
           parent=$(exec git hash-object -t tree -- /dev/null)
           exec git diff-index --cached --check "$parent"
   test:
@@ -30,5 +31,5 @@ jobs:
         with:
           cache: pnpm
           node-version-file: .nvmrc
-      - run: pnpm install
-      - run: pnpm run test
+      - run: exec pnpm install
+      - run: exec pnpm run test
