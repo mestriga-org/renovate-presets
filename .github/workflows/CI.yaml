@@ -14,6 +14,8 @@ jobs:
   git-check:
     runs-on: ubuntu-latest
     steps:
+      # https://github.com/git/git/blob/master/ci/check-directional-formatting.bash
+      # todo see if file will be in the index
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           sparse-checkout: '!/'
@@ -22,6 +24,10 @@ jobs:
           set -Cfu
           parent=$(exec git hash-object -t tree -- /dev/null)
           exec git diff-index --cached --check "$parent"
+      - run: |
+          set -Cfu
+          exec git ls-files -eol
+
   test:
     runs-on: ubuntu-latest
     steps:
