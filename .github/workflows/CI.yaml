@@ -12,23 +12,44 @@ defaults:
 
 jobs:
   git-check:
+    name: Check git attributes
     runs-on: ubuntu-latest
     steps:
       # https://github.com/git/git/blob/master/ci/check-directional-formatting.bash
-      # todo see if file will be in the index
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           sparse-checkout: '!/'
           sparse-checkout-cone-mode: false
-      - run: |
-          set -Cfu
+      - name: Check whitespace attributes
+        if: false
+        run: |
+          set -u
           parent=$(exec git hash-object -t tree -- /dev/null)
-          exec git diff-index --cached --check "$parent"
-      - run: |
-          set -Cfu
-          exec git ls-files --eol
-
+          exec git -c core.whitespace=indent_with_nontab,tabwidth=1 diff-index --cached --check "$parent"
+      - name: Check text attributes
+        shell: bash
+        run: |
+          set -o posix
+          shopt -s lastpipe
+          set -u
+          exec git ls-files --format='%(eolinfo:index) %(eolattr)' |
+          while :; do
+                  IFS= read -r line || case $? in (1) break ;; (*) exit; esac
+                  IFS=' '
+                  set -- ''$line
+                  case $* in ("$line") ;; (*) command -p false; esac
+                  unset -v IFS
+                  case $1 in (-text|none|lf) ;; (*) command -p false; esac
+                  case $2 in
+                          (-text) case $1 in (-text) ;; (*) command -p false; esac
+                  ;;      (text) case $1 in (-text) command -p false; esac
+                  ;;      (text=auto)
+                  ;;      (*) command -p false
+                  esac
+          done
+          case $line in ('') ;; (*) command -p false; esac
   test:
+    name: Runs package.json test script
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
