@@ -16,6 +16,6 @@
 	"devDependencies": {
 		"@antfu/eslint-config": "6.0.0",
 		"eslint": "9.37.0",
-		"renovate": "41.152.9"
+		"renovate": "41.152.3"
 	}
 }
