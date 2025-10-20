@@ -21,7 +21,6 @@ jobs:
           sparse-checkout: '!/'
           sparse-checkout-cone-mode: false
       - name: Check whitespace attributes
-        if: false
         run: |
           set -u
           parent=$(exec git hash-object -t tree -- /dev/null)
