@@ -11,7 +11,7 @@
 		}
 	},
 	"scripts": {
-		"lint": "eslint --cache --cache-strategy=content --cache-location=node_modules/.cache/eslint/ --concurrency=auto"
+		"test": "eslint --cache --cache-strategy=content --cache-location=node_modules/.cache/eslint/ --concurrency=auto"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "6.0.0",
