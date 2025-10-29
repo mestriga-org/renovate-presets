@@ -14,7 +14,7 @@
 		"test": "eslint --concurrency=auto"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "6.0.0",
+		"@antfu/eslint-config": "6.1.0",
 		"eslint": "9.38.0"
 	}
 }
