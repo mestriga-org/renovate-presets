@@ -4,3 +4,5 @@ https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts
 
 TODO:
 - add classic branch protection rules
+- enable platform automerge
+- ensure notifications

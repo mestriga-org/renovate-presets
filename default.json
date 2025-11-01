@@ -2,7 +2,7 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:best-practices",
+		"config:best-practices", // config:recommended with pinning, abandonment and config migration
 		":approveMajorUpdates",
 		":automergeMinor",
 		":configMigration",
@@ -10,6 +10,7 @@
 		":prHourlyLimitNone",
 		"security:minimumReleaseAgeNpm"
 	],
+	"assignees": [ "mestriga" ],
 	"hostRules": [
 		{ "abortOnError": true }
 	],
