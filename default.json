@@ -10,7 +10,7 @@
 		":prHourlyLimitNone",
 		"security:minimumReleaseAgeNpm"
 	],
-	"assignees": [ "mestriga" ],
+	"assignees": ["mestriga"],
 	"hostRules": [
 		{ "abortOnError": true }
 	],
