@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
-	// forces the default fork processing mode for the Mend Renovate App
+	// forces the default fork processing mode for the Mend Renovate App (not tested)
 	"forkProcessing": "auto",
 	// overrides the default setting of the Mend Renovate App
 	"mode": "full",
@@ -11,7 +11,8 @@
 			"local>mestriga-org/renovate-config"
 		]
 	},
-	// overrides default of "renovate.json"
+	// moves the default config file off the repo root
 	"onboardingConfigFileName": ".github/renovate.json",
+	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled"
 }
