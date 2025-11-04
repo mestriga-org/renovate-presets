@@ -1,4 +1,6 @@
-// https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/blob/main/renovate-common.json
+// This is the organization's default preset.
+// important options with defaults implied:
+// - https://docs.renovatebot.com/configuration-options/#rebasewhen
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
@@ -31,8 +33,8 @@
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules and when rebaseWhen=auto
-	"platformAutomerge": false,
+	"platformAutomerge": false, // (not available for free private repositories)
 	"vulnerabilityAlerts": {
 		"addLabels": ["security"]
-	}
+	},
 }
