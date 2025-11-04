@@ -1,9 +1,13 @@
 * text
-* whitespace=indent-with-non-tab,tabwidth=2
+* whitespace=tabwidth=4,indent-with-non-tab
 * working-tree-encoding=UTF-8
 
-*.md   whitespace=indent-with-non-tab,tabwidth=4
-*.yaml whitespace=tab-in-indent,tabwidth=2
+*.yaml  whitespace=tabwidth=2,tab-in-indent
+*.yml   whitespace=tabwidth=2,tab-in-indent
+
+*.json  whitespace=tabwidth=2,indent-with-non-tab
+*.jsonc whitespace=tabwidth=2,indent-with-non-tab
+*.mjs   whitespace=tabwidth=2,indent-with-non-tab
 
 /package.json        eol=lf
 /pnpm-lock.yaml      eol=lf
