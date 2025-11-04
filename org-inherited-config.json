@@ -20,7 +20,6 @@
 	"onboardingNoDeps": "enabled",
 	// enforces the default for the Mend App
 	"requireConfig": "required",
-	"enabled": true
 
 	/*
 	// need to override this
