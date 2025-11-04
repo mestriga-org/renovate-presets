@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
-	// forces the default fork processing mode for the Mend Renovate App (not tested)
+	// forces the default fork processing mode for the Mend Renovate App (auto probably makes no sense)
 	"forkProcessing": "auto",
 	// overrides the default setting of the Mend Renovate App
 	"mode": "full",
@@ -18,5 +18,17 @@
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
 	// enforces the default for the Mend App
-	"requireConfig": "required"
+	"requireConfig": "required",
+	"enabled": true
+
+	/*
+	// need to override this
+	packageRules": [
+	{
+		"matchPackageNames": [
+			"*"
+		],
+		"dependencyDashboardApproval": true
+	}
+	*/
 }
