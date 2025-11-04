@@ -36,5 +36,5 @@
 	"platformAutomerge": false, // (not available for free private repositories)
 	"vulnerabilityAlerts": {
 		"addLabels": ["security"]
-	},
+	}
 }

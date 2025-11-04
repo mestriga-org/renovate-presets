@@ -1,9 +1,10 @@
 https://docs.renovatebot.com/config-overview/#changing-default-behaviors
 
-// todo hostrules
-// automerging with minimum release age of 14 days (or npm:unpublishSafe)
-// notifications
-// versioning strategy
-// autoApprove and renovate-approve app
-// stale pr rebasing
-// note: platform automerge not available for free private repos
+TODO:
+// - configure branch protection rules
+// - require stuff to exist
+
+interesting references:
+https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/blob/main/renovate-common.json
+
+// add to org-inherited-config

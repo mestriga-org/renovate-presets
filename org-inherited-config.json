@@ -1,6 +1,17 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
+	// force the default fork processing mode for the Mend Renovate App
 	"forkProcessing": "auto",
+	// overrides the default setting of the Mend Renovate App
 	"mode": "full",
-	"onboardingConfigFileName": ".github/renovate.json"
+	// bypasses autodetection
+	"onboardingConfig": {
+		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+		"extends": [
+			"local>mestriga-org/renovate-config"
+		]
+	},
+	// override default of "renovate.json"
+	"onboardingConfigFileName": ".github/renovate.json",
+	"onboardingRebaseCheckbox": true
 }
