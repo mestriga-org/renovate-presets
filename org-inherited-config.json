@@ -1,5 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"forkProcessing": "auto",
-	"mode": "full"
+	"mode": "full",
+	"onboardingConfigFileName": ".github/renovate.json"
 }
