@@ -4,6 +4,5 @@
 		"EditorConfig.EditorConfig",
 		"github.vscode-github-actions",
 		"redhat.vscode-yaml",
-		"remcohaszing.schemastore",
 	],
 }
