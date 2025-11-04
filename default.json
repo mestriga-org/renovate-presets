@@ -13,6 +13,7 @@
 		"security:minimumReleaseAgeNpm"
 	],
 	"assignees": ["mestriga"],
+	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"hostRules": [
 		{ "abortOnError": true }
 	],
