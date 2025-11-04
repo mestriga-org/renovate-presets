@@ -20,14 +20,4 @@
 	"onboardingNoDeps": "enabled",
 	// enforces the default for the Mend App
 	"requireConfig": "required"
-	/*
-	// need to override this
-	packageRules": [
-	{
-		"matchPackageNames": [
-			"*"
-		],
-		"dependencyDashboardApproval": true
-	}
-	*/
 }

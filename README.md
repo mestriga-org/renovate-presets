@@ -8,3 +8,15 @@ interesting references:
 https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/blob/main/renovate-common.json
 
 // add to org-inherited-config
+
+
+	/*
+	// need to override this
+	packageRules": [
+	{
+		"matchPackageNames": [
+			"*"
+		],
+		"dependencyDashboardApproval": true
+	}
+	*/
