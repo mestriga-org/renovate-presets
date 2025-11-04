@@ -4,7 +4,9 @@
 	"forkProcessing": "auto",
 	// overrides the default setting of the Mend Renovate App
 	"mode": "full",
-	// sets fallback onboarding config
+	// enforces the default for the Mend App
+	"onboarding": true,
+	// sets the expected autodetection result as a fallback
 	"onboardingConfig": {
 		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 		"extends": [
@@ -14,5 +16,7 @@
 	// moves the default config file off the repo root
 	"onboardingConfigFileName": ".github/renovate.json",
 	// forces enablement of onboarding for discovered repositories with no dependencies
-	"onboardingNoDeps": "enabled"
+	"onboardingNoDeps": "enabled",
+	// enforces the default for the Mend App
+	"requireConfig": "required"
 }
