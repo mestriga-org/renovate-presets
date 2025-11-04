@@ -19,8 +19,7 @@
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
 	// enforces the default for the Mend App
-	"requireConfig": "required",
-
+	"requireConfig": "required"
 	/*
 	// need to override this
 	packageRules": [
