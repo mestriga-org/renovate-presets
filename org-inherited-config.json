@@ -4,7 +4,7 @@
 	"forkProcessing": "auto",
 	// overrides the default setting of the Mend Renovate App
 	"mode": "full",
-	// bypasses autodetection
+	// sets fallback onboarding config
 	"onboardingConfig": {
 		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 		"extends": [
