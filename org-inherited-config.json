@@ -12,5 +12,6 @@
 		]
 	},
 	// overrides default of "renovate.json"
-	"onboardingConfigFileName": ".github/renovate.json"
+	"onboardingConfigFileName": ".github/renovate.json",
+	"onboardingNoDeps": "auto"
 }
