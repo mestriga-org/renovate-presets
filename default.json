@@ -1,7 +1,4 @@
 // This is the organization's default preset.
-// important options with defaults implied:
-// - https://docs.renovatebot.com/configuration-options/#rebasewhen
-// TODO: determine precedence of config set in and out of package rules
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
