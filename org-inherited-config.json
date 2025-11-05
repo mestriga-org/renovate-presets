@@ -1,11 +1,13 @@
 // https://docs.renovatebot.com/config-overview/#inherited-config
 
+// NOTES:
 // All values configurable in the Mend App UI are overriden here, except for:
 // - Dependency Updates (when this is disabled, Renovate is not started for this repo)
 // - Dependency Updates >> Renovate >> Automated PRs (
 // 		when both this and 'Silent' are disabled, "dependencyDashboardApproval" is enabled
 //		with a catch-all packageRules
 // )
+// onboarding* settings are global-only
 
 {
 	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
