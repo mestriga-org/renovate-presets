@@ -1,13 +1,21 @@
 // https://docs.renovatebot.com/config-overview/#inherited-config
+
+// All values configurable in the Mend App UI are overriden here, except for:
+// - Dependency Updates (when this is disabled, Renovate is not started for this repo)
+// - Dependency Updates >> Renovate >> Automated PRs (
+// 		when both this and 'Silent' are disabled, "dependencyDashboardApproval" is enabled
+//		with a catch-all packageRules
+// )
+
 {
 	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
 	// forces the default fork processing mode for the Mend Renovate App (auto probably makes no sense)
 	"forkProcessing": "auto",
-	// overrides the default setting of the Mend Renovate App
+	// overrides configuration from the Mend App UI with the default
 	"mode": "full",
-	// enforces the default for the Mend App
+	// overrides configuration from the Mend App UI with the default
 	"onboarding": true,
-	// sets the expected autodetection result as a fallback
+	// sets the expected autodetected value as a fallback
 	"onboardingConfig": {
 		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 		"extends": [
@@ -18,6 +26,6 @@
 	"onboardingConfigFileName": ".github/renovate.json",
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
-	// enforces the default for the Mend App
+	// overrides configuration from the Mend App UI with the default
 	"requireConfig": "required"
 }
