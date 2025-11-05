@@ -1,6 +1,7 @@
+import type { Linter } from 'eslint'
 import antfu from '@antfu/eslint-config'
 
-export default antfu(
+const config: Promise<Linter.Config[]> = antfu(
 	{
 		stylistic: {
 			indent: 'tab',
@@ -9,6 +10,9 @@ export default antfu(
 			},
 		},
 		type: 'lib',
+		typescript: {
+			erasableOnly: true,
+		},
 	},
 	{
 		files: ['package.json'],
@@ -18,7 +22,6 @@ export default antfu(
 	},
 	{
 		files: [
-			'wrangler.jsonc',
 			'.vscode/*.json',
 		],
 		rules: {
@@ -26,3 +29,4 @@ export default antfu(
 		},
 	},
 )
+export default config
