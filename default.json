@@ -8,6 +8,7 @@
 		":configMigration",
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
+		":timezone(America/Sao_Paulo)",
 		"security:minimumReleaseAgeNpm"
 	],
 	"assignees": ["mestriga"],
