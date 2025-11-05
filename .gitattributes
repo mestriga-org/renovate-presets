@@ -17,3 +17,5 @@
 /pnpm-workspace.yaml eol=lf
 
 /.node-version text working-tree-encoding=ASCII
+
+/.npmrc        text working-tree-encoding=UTF-8
