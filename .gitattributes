@@ -1,12 +1,14 @@
 * text=auto
 * whitespace=tabwidth=4,indent-with-non-tab
 
-*.json working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
-*.mts  working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
+*.json text working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
+*.mts  text working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
 
-*.yaml working-tree-encoding=UTF-8 whitespace=tabwidth=2,tab-in-indent
-*.yml  working-tree-encoding=UTF-8 whitespace=tabwidth=2,tab-in-indent
+*.yaml text working-tree-encoding=UTF-8 whitespace=tabwidth=2,tab-in-indent
+*.yml  text working-tree-encoding=UTF-8 whitespace=tabwidth=2,tab-in-indent
 
 /package.json        eol=lf
 /pnpm-lock.yaml      eol=lf
 /pnpm-workspace.yaml eol=lf
+
+/.node-version text working-tree-encoding=ASCII
