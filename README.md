@@ -9,7 +9,6 @@ https://gitlab.com/gitlab-com/gl-infra/common-ci-tasks/-/blob/main/renovate-comm
 
 // add to org-inherited-config
 
-
 	/*
 	// need to override this
 	packageRules": [
