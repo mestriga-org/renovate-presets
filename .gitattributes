@@ -1,10 +1,10 @@
 * text=auto
 * whitespace=tabwidth=4,indent-with-non-tab
 
+.editorconfig  text working-tree-encoding=UTF-8
 .gitattributes text working-tree-encoding=UTF-8
 .gitignore     text working-tree-encoding=UTF-8
 *.md           text working-tree-encoding=UTF-8
-.editorconfig  text working-tree-encoding=UTF-8
 /.npmrc        text working-tree-encoding=UTF-8
 
 *.json text working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
