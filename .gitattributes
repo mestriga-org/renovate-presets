@@ -2,11 +2,11 @@
 * whitespace=tabwidth=4,indent-with-non-tab
 * working-tree-encoding=UTF-8
 
-*.json  whitespace=tabwidth=2,indent-with-non-tab
-*.mts   whitespace=tabwidth=2,indent-with-non-tab
+*.json whitespace=tabwidth=2,indent-with-non-tab
+*.mts  whitespace=tabwidth=2,indent-with-non-tab
 
-*.yaml  whitespace=tabwidth=2,tab-in-indent
-*.yml   whitespace=tabwidth=2,tab-in-indent
+*.yaml whitespace=tabwidth=2,tab-in-indent
+*.yml  whitespace=tabwidth=2,tab-in-indent
 
 /package.json        eol=lf
 /pnpm-lock.yaml      eol=lf
