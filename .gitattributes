@@ -5,6 +5,7 @@
 .gitignore     text working-tree-encoding=UTF-8
 *.md           text working-tree-encoding=UTF-8
 .editorconfig  text working-tree-encoding=UTF-8
+/.npmrc        text working-tree-encoding=UTF-8
 
 *.json text working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
 *.mts  text working-tree-encoding=UTF-8 whitespace=tabwidth=2,indent-with-non-tab
@@ -17,5 +18,3 @@
 /pnpm-workspace.yaml eol=lf
 
 /.node-version text working-tree-encoding=ASCII
-
-/.npmrc        text working-tree-encoding=UTF-8
