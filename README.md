@@ -4,6 +4,5 @@
 	https://docs.renovatebot.com/presets-config/#configjs-app
 	https://docs.renovatebot.com/presets-config/#configjs-lib
 
-
 :respectLatest
 :ignoreUnstable
