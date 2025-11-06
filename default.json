@@ -16,7 +16,6 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"hostRules": [{ "abortOnError": true }],
-	"internalChecksAsSuccess": true,
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
