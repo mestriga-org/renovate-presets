@@ -9,15 +9,14 @@
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
 		":timezone(America/Sao_Paulo)",
-		"security:minimumReleaseAgeNpm"
+		"security:minimumReleaseAgeNpm",
+		":assignee(mestriga)",
+		":label(dependencies)",
+		":enableVulnerabilityAlertsWithAdditionalLabel(security)"
 	],
-	"assignees": ["mestriga"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"hostRules": [
-		{ "abortOnError": true }
-	],
+	"hostRules": [{ "abortOnError": true }],
 	"internalChecksAsSuccess": true,
-	"labels": ["dependencies"],
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
@@ -33,8 +32,5 @@
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules and when rebaseWhen=auto
-	"platformAutomerge": false, // (not available for free private repositories)
-	"vulnerabilityAlerts": {
-		"addLabels": ["security"]
-	}
+	"platformAutomerge": false // (not available for free private repositories)
 }
