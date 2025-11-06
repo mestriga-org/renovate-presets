@@ -3,6 +3,7 @@
  - pin less dependencies, see
 	https://docs.renovatebot.com/presets-config/#configjs-app
 	https://docs.renovatebot.com/presets-config/#configjs-lib
+- review npm package grouping (done through package rules)
 
-:respectLatest
-:ignoreUnstable
+# DOING
+- custom managers
