@@ -2,7 +2,8 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:best-practices", // config:recommended with pinning, abandonment and config migration
+		// config:best-practices extends config:recommended with settings for pinning, abandonment and config migration
+		"config:best-practices",
 		":approveMajorUpdates",
 		":automergeMinor",
 		":configMigration",
@@ -10,26 +11,30 @@
 		":prHourlyLimitNone",
 		":timezone(America/Sao_Paulo)",
 		"security:minimumReleaseAgeNpm",
-		":assignee(mestriga)",
-		":label(dependencies)",
-		":enableVulnerabilityAlertsWithAdditionalLabel(security)"
+		":label(dependencies)", // same as Dependabot's default
+		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
+		"customManagers:dockerfileVersions",
+		"customManagers:githubActionsVersions",
+		"customManagers:tfvarsVersions",
+		":assignee(mestriga)"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"hostRules": [{ "abortOnError": true }],
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
-			// defaults terraform modules and providers to OpenTofu registry
+			// defaults terraform modules and providers to the OpenTofu registry
 			"matchDatasources": ["terraform-{module,provider}"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
 			// groups NPM dependencies to prevent breaking peer requirements
 			"groupName": "node dependencies",
-			"matchDepTypes": ["!packageManager"],
-			"matchManagers": ["npm"]
+			"matchManagers": ["npm"],
+			"matchDepTypes": ["!packageManager"]
 		}
 	],
-	// ensures consistent behavior without configuration of branch protection rules and when rebaseWhen=auto
-	"platformAutomerge": false // (not available for free private repositories)
+	// ensures consistent behavior without configuration of branch protection rules
+	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
+	"platformAutomerge": false
 }
