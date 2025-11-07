@@ -19,7 +19,7 @@
 		":assignee(mestriga)"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"hostRules": [{ "abortOnError": true }],
+	// "hostRules": [{ "abortOnError": true }],
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
