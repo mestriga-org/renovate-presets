@@ -16,7 +16,7 @@
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
 		"customManagers:tfvarsVersions",
-		":reviewer(mestriga)"
+		":assignee(mestriga)"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
