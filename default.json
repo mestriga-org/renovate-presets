@@ -2,7 +2,7 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		// config:best-practices extends config:recommended with settings for pinning, abandonment and config migration
+		// config:best-practices extends config:recommended with settings for pinning, abandonment, config migration and minimumReleaseAge
 		"config:best-practices",
 		":assignee(mestriga)",
 		":automergeMinor",
@@ -16,8 +16,7 @@
 		":timezone(America/Sao_Paulo)",
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
-		"customManagers:tfvarsVersions",
-		"security:minimumReleaseAgeNpm"
+		"customManagers:tfvarsVersions"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
