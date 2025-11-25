@@ -1,4 +1,5 @@
 # TODO
+
  - configure branch protection rules
  - pin less dependencies, see
 	https://docs.renovatebot.com/presets-config/#configjs-app
@@ -8,3 +9,7 @@
 # useful stuff for debugging
 
 - https://docs.renovatebot.com/configuration-options/#loglevelremap
+
+# ISSUES
+
+- renovate does not support remediation for vulnerable transitive dependencies: https://docs.renovatebot.com/key-concepts/minimum-release-age/#what-happens-to-transitive-dependencies
