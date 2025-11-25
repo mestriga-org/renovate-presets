@@ -28,9 +28,9 @@
 		},
 		{
 			// groups NPM dependencies to prevent breaking peer requirements
-			// "groupName": "node dependencies",
-			// "matchManagers": ["npm"],
-			// "matchDepTypes": ["!packageManager"]
+			"groupName": "node dependencies",
+			"matchManagers": ["npm"],
+			"matchDepTypes": ["!packageManager"]
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules
