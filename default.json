@@ -7,6 +7,7 @@
 		":assignee(mestriga)",
 		":automergeMinor",
 		":configMigration",
+		":group:allNonMajor",
 		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
 		":label(dependencies)", // same as Dependabot's default
 		":maintainLockFilesWeekly",
@@ -15,7 +16,6 @@
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
 		"customManagers:tfvarsVersions",
-		"group:nodeJs", // prevents dependency breakage
 		"security:minimumReleaseAgeNpm"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
