@@ -15,7 +15,7 @@
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
 		"customManagers:tfvarsVersions",
-		"group:nodeJs",
+		"group:nodeJs", // prevents dependency breakage
 		"security:minimumReleaseAgeNpm"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
