@@ -12,6 +12,7 @@
 		":label(dependencies)", // same as Dependabot's default
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
+		":rebaseStalePrs",
 		":timezone(America/Sao_Paulo)",
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
