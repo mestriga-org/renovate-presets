@@ -4,7 +4,6 @@
 	"extends": [
 		// config:best-practices extends config:recommended with settings for pinning, abandonment and config migration
 		"config:best-practices",
-		":approveMajorUpdates",
 		":automergeMinor",
 		":configMigration",
 		":maintainLockFilesWeekly",
