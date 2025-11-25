@@ -4,18 +4,19 @@
 	"extends": [
 		// config:best-practices extends config:recommended with settings for pinning, abandonment and config migration
 		"config:best-practices",
+		":assignee(mestriga)",
 		":automergeMinor",
 		":configMigration",
+		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
+		":label(dependencies)", // same as Dependabot's default
 		":maintainLockFilesWeekly",
 		":prHourlyLimitNone",
 		":timezone(America/Sao_Paulo)",
-		"security:minimumReleaseAgeNpm",
-		":label(dependencies)", // same as Dependabot's default
-		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
 		"customManagers:dockerfileVersions",
 		"customManagers:githubActionsVersions",
 		"customManagers:tfvarsVersions",
-		":assignee(mestriga)"
+		"group:nodeJs",
+		"security:minimumReleaseAgeNpm"
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
@@ -24,12 +25,6 @@
 			// defaults terraform modules and providers to the OpenTofu registry
 			"matchDatasources": ["terraform-{module,provider}"],
 			"registryUrls": ["https://registry.opentofu.org"]
-		},
-		{
-			// groups NPM dependencies to prevent breaking peer requirements
-			"groupName": "node dependencies",
-			"matchManagers": ["npm"],
-			"matchDepTypes": ["!packageManager"]
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules
