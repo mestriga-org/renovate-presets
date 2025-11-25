@@ -18,8 +18,8 @@
 		"customManagers:tfvarsVersions",
 		":assignee(mestriga)"
 	],
-	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"osvVulnerabilityAlerts": true,
+	// "dependencyDashboardOSVVulnerabilitySummary": "all",
+	// "osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
 			// defaults terraform modules and providers to the OpenTofu registry
