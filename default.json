@@ -29,5 +29,11 @@
 	],
 	// ensures consistent behavior without configuration of branch protection rules
 	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
-	"platformAutomerge": false
+	"platformAutomerge": false,
+	// dedupes node packages
+	"postUpdateOptions": [
+		"npmDedupe",
+		"pnpmDedupe",
+		"yarnDedupeHighest"
+	]
 }
