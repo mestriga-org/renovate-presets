@@ -18,6 +18,19 @@
 		"customManagers:tfvarsVersions",
 		"group:allNonMajor"
 	],
+	"customManagers": [
+		{
+			"customType": "jsonata",
+			"fileFormat": "yaml",
+			"managerFilePatterns": [".github/workflows/*.yml"],
+			"matchStrings": [
+				"jobs.*.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
+			],
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "Azure/bicep",
+			"versioningTemplate": "semver"
+		}
+	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
 	// overrides for OpenTofu
