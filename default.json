@@ -5,7 +5,6 @@
 		// config:best-practices extends config:recommended with settings for pinning, abandonment, config migration and minimumReleaseAge
 		"config:best-practices",
 		":assignee(mestriga)",
-		":automergeMinor",
 		":configMigration",
 		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
 		":label(dependencies)", // same as Dependabot's default
@@ -13,10 +12,7 @@
 		":prHourlyLimitNone",
 		":rebaseStalePrs",
 		":timezone(America/Sao_Paulo)",
-		"customManagers:dockerfileVersions",
-		"customManagers:githubActionsVersions",
-		"customManagers:tfvarsVersions",
-		"group:allNonMajor"
+		"customManagers:biomeVersions"
 	],
 	"customManagers": [
 		{
@@ -37,6 +33,15 @@
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
+		{
+			"matchJsonata": ["isBreaking != true"],
+			"autoMerge": true
+		},
+		{
+			"matchJsonata": ["isBreaking = false"],
+			"groupName": "all non-breaking dependencies",
+			"groupSlug": "all-non-breaking"
+		},
 		// OpenTofu
 		{
 			"matchFileNames": ["**/*.tofu"],
