@@ -31,9 +31,8 @@
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	// TODO remove this: temporary workaround to allow automatic lock file updates
-	"minimumReleaseAgeBehaviour": "timestamp-optional",
 	"osvVulnerabilityAlerts": true,
+	// TODO add descriptions to each packageRules item
 	"packageRules": [
 		{
 			"matchJsonata": ["isBreaking != true"],
@@ -43,6 +42,12 @@
 			"matchJsonata": ["isBreaking = false"],
 			"groupName": "all non-breaking dependencies",
 			"groupSlug": "all-non-breaking"
+		},
+		{
+			"description": "Do not require releage age for npm lock file maintenance",
+			"matchDatasources": ["npm"],
+			"matchUpdateTypes": ["lockFileMaintenance"],
+			"minimumReleaseAgeBehaviour": "timestamp-optional"
 		},
 		// OpenTofu
 		{
