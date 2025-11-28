@@ -30,8 +30,6 @@
 			"matchFileNames": ["*.tofu"],
 			"matchManagers": ["terraform"],
 			"matchDepTypes": ["required_version"],
-			"overrideDepName": "opentofu/opentofu",
-			"overridePackageName": "opentofu/opentofu",
 			"sourceUrl": "https://github.com/opentofu/opentofu"
 		}
 	],
