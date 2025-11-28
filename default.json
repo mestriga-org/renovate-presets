@@ -19,13 +19,21 @@
 		"group:allNonMajor"
 	],
 	"customManagers": [
+		// TODO make this work with actions
 		{
 			"customType": "jsonata",
 			"fileFormat": "yaml",
-			"managerFilePatterns": [".github/workflows/*.yml"],
-			"matchStrings": [
-				"jobs.*.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
-			],
+			"managerFilePatterns": [".github/workflows/*.{yml,yaml}"],
+			"matchStrings": ["jobs.*.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"],
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "Azure/bicep",
+			"versioningTemplate": "semver"
+		},
+		{
+			"customType": "jsonata",
+			"fileFormat": "yaml",
+			"managerFilePatterns": ["**/action.{yml,yaml}"],
+			"matchStrings": ["runs.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"],
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "Azure/bicep",
 			"versioningTemplate": "semver"
@@ -33,8 +41,8 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
-	// overrides for OpenTofu
 	"packageRules": [
+		// OpenTofu
 		{
 			"matchFileNames": ["**/*.tofu"],
 			"matchDatasources": ["terraform-{module,provider}"],
@@ -47,7 +55,7 @@
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
-			"matchFileNames": ["**/.opentofu-version"],
+			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
 		}
@@ -61,7 +69,7 @@
 		"pnpmDedupe",
 		"yarnDedupeHighest"
 	],
-	// extension for OpenTofu
+	// OpenTofu
 	"terraform-version": {
 		"managerFilePatterns": [
 			"/(^|/)\\.opentofu-version$/"
