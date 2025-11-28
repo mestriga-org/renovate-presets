@@ -2,6 +2,8 @@ dedupeDirectDeps: true
 
 hoist: false
 
+ignorePatchFailures: false
+
 minimumReleaseAge: 1440
 
 strictPeerDependencies: true
