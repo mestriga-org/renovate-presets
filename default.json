@@ -22,18 +22,18 @@
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
-			"matchFileNames": ["*.tofu"],
+			"matchFileNames": ["**/*.tofu"],
 			"matchDatasources": ["terraform-{module,provider}"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
-			"matchFileNames": ["*.tofu"],
+			"matchFileNames": ["**/*.tofu"],
 			"matchManagers": ["terraform"],
 			"matchDepTypes": ["required_version"],
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
-			"matchFileNames": [".opentofu-version"],
+			"matchFileNames": ["**/.opentofu-version"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
 		}
