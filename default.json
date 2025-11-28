@@ -41,5 +41,10 @@
 		"npmDedupe",
 		"pnpmDedupe",
 		"yarnDedupeHighest"
-	]
+	],
+	"terraform-version": {
+		"managerFilePatterns": [
+			"/(^|/)\\.opentofu-version$/"
+		]
+	}
 }
