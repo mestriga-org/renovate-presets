@@ -19,21 +19,16 @@
 		"group:allNonMajor"
 	],
 	"customManagers": [
-		// TODO make this work with actions
 		{
 			"customType": "jsonata",
 			"fileFormat": "yaml",
-			"managerFilePatterns": [".github/workflows/*.{yml,yaml}"],
-			"matchStrings": ["jobs.*.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"],
-			"datasourceTemplate": "github-releases",
-			"depNameTemplate": "Azure/bicep",
-			"versioningTemplate": "semver"
-		},
-		{
-			"customType": "jsonata",
-			"fileFormat": "yaml",
-			"managerFilePatterns": ["**/action.{yml,yaml}"],
-			"matchStrings": ["runs.steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"],
+			"managerFilePatterns": [
+				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
+				"/(^|/)action\\.ya?ml$/"
+			],
+			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
+			],
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "Azure/bicep",
 			"versioningTemplate": "semver"
@@ -49,12 +44,14 @@
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
+			// NOTE: overrideDepName made renovate run fail (2025-11-28)
 			"matchFileNames": ["**/*.tofu"],
 			"matchManagers": ["terraform"],
 			"matchDepTypes": ["required_version"],
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
+			// NOTE: did not try to override depName
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
