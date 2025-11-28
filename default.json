@@ -22,9 +22,17 @@
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
-			// defaults terraform modules and providers to the OpenTofu registry
+			"matchFileNames": ["*.tofu"],
 			"matchDatasources": ["terraform-{module,provider}"],
 			"registryUrls": ["https://registry.opentofu.org"]
+		},
+		{
+			"matchFileNames": ["*.tofu"],
+			"matchManagers": ["terraform"],
+			"matchDepTypes": ["required_version"],
+			"overrideDepName": "opentofu/opentofu",
+			"overridePackageName": "opentofu/opentofu",
+			"sourceUrl": "https://github.com/opentofu/opentofu"
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules
