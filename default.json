@@ -27,9 +27,10 @@
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
-			"matchFileNames": ["*.tofu"],
-			"matchManagers": ["terraform"],
-			"matchDepTypes": ["required_version"],
+			// "matchFileNames": ["*.tofu"],
+			// "matchManagers": ["terraform"],
+			// "matchDepTypes": ["required_version"],
+			"matchDepNames": ["hashicorp/terraform"],
 			"overrideDepName": "opentofu/opentofu",
 			"overridePackageName": "opentofu/opentofu"
 		}
