@@ -30,7 +30,7 @@
 			"matchFileNames": ["*.tofu"],
 			"matchManagers": ["terraform"],
 			"matchDepTypes": ["required_version"],
-			"sourceUrl": "https://github.com/opentofu/opentofu"
+			"overridePackageName": "opentofu/opentofu"
 		}
 	],
 	// ensures consistent behavior without configuration of branch protection rules
