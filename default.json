@@ -31,6 +31,8 @@
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
+	// TODO remove this: temporary workaround to allow automatic lock file updates
+	"minimumReleaseAgeBehaviour": "timestamp-optional",
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
