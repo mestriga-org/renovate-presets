@@ -1,3 +1,5 @@
+dedupeDirectDeps: true
+
 hoist: false
 
 minimumReleaseAge: 1440
