@@ -20,6 +20,7 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"osvVulnerabilityAlerts": true,
+	// overrides for OpenTofu
 	"packageRules": [
 		{
 			"matchFileNames": ["**/*.tofu"],
@@ -47,6 +48,7 @@
 		"pnpmDedupe",
 		"yarnDedupeHighest"
 	],
+	// extension for OpenTofu
 	"terraform-version": {
 		"managerFilePatterns": [
 			"/(^|/)\\.opentofu-version$/"
