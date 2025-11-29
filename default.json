@@ -33,7 +33,7 @@
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": {
 		"automerge": true,
-		"internalChecksFilter": "none"
+		"minimumReleaseAgeBehaviour": "timestamp-optional"
 	},
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
