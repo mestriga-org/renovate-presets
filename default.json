@@ -32,7 +32,8 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": {
-		"automerge": true
+		"automerge": true,
+		"internalChecksFilter": "none"
 	},
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
@@ -46,13 +47,13 @@
 			"groupName": "all non-breaking dependencies",
 			"groupSlug": "all-non-breaking"
 		},
-		{
-			// TODO remove this workarond (triggers renovate Warnings)
-			// Note: this allows automerge for lock file maintenance
-			"description": "Disable internal checks (including timestamps) for lock file maintenance",
-			"matchUpdateTypes": ["lockFileMaintenance"],
-			"internalChecksFilter": "none"
-		},
+		// {
+		// TODO remove this workarond (triggers renovate Warnings)
+		// Note: this allows automerge for lock file maintenance
+		//	"description": "Disable internal checks (including timestamps) for lock file maintenance",
+		// "matchUpdateTypes": ["lockFileMaintenance"],
+		// "internalChecksFilter": "none"
+		// },
 		// OpenTofu
 		{
 			"matchFileNames": ["**/*.tofu"],
