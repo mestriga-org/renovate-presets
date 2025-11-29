@@ -46,14 +46,12 @@
 			"groupName": "all non-breaking dependencies",
 			"groupSlug": "all-non-breaking"
 		},
-		/*
 		{
-			// this rule will trigger renovate Warnings
-			"description": "Do not require releage age for npm lock file maintenance",
+			// TODO remove this workarond (triggers renovate Warnings)
+			"description": "Make releage date optional for lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
 			"minimumReleaseAgeBehaviour": "timestamp-optional"
 		},
-		*/
 		// OpenTofu
 		{
 			"matchFileNames": ["**/*.tofu"],
