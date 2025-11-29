@@ -50,7 +50,8 @@
 			// TODO remove this workarond (triggers renovate Warnings)
 			"description": "Make releage date optional for lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
-			"minimumReleaseAgeBehaviour": "timestamp-optional"
+			"minimumReleaseAge": null
+			// "minimumReleaseAgeBehaviour": "timestamp-optional"
 		},
 		// OpenTofu
 		{
