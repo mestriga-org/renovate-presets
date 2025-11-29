@@ -31,6 +31,11 @@
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
+	/*
+	"lockFileMaintenance": {
+		"automerge": true
+	},
+	*/
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
@@ -43,12 +48,14 @@
 			"groupName": "all non-breaking dependencies",
 			"groupSlug": "all-non-breaking"
 		},
+		/*
 		{
 			// this rule will trigger renovate Warnings
 			"description": "Do not require releage age for npm lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
 			"minimumReleaseAgeBehaviour": "timestamp-optional"
 		},
+		*/
 		// OpenTofu
 		{
 			"matchFileNames": ["**/*.tofu"],
