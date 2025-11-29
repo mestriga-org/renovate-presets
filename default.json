@@ -48,6 +48,7 @@
 		},
 		{
 			// TODO remove this workarond (triggers renovate Warnings)
+			// Note: this allows automerge for lock file maintenance
 			"description": "Disable internal checks (including timestamps) for lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
 			"internalChecksFilter": "none"
