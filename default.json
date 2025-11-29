@@ -48,9 +48,9 @@
 		},
 		{
 			// TODO remove this workarond (triggers renovate Warnings)
-			"description": "Make timestamps optional for lock file maintenance",
+			"description": "Disable internal checks (including timestamps) for lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
-			"minimumReleaseAgeBehaviour": "timestamp-optional"
+			"internalChecksFilter": "none"
 		},
 		// OpenTofu
 		{
