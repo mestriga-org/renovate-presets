@@ -31,11 +31,9 @@
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	/*
 	"lockFileMaintenance": {
 		"automerge": true
 	},
-	*/
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
