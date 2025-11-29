@@ -41,7 +41,7 @@
 	"packageRules": [
 		{
 			"matchJsonata": ["isBreaking != true"],
-			"autoMerge": true
+			"automerge": true
 		},
 		{
 			"matchJsonata": ["isBreaking = false"],
