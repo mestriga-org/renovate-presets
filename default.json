@@ -48,10 +48,9 @@
 		},
 		{
 			// TODO remove this workarond (triggers renovate Warnings)
-			"description": "Make releage date optional for lock file maintenance",
+			"description": "Make timestamps optional for lock file maintenance",
 			"matchUpdateTypes": ["lockFileMaintenance"],
-			"minimumReleaseAge": null
-			// "minimumReleaseAgeBehaviour": "timestamp-optional"
+			"minimumReleaseAgeBehaviour": "timestamp-optional"
 		},
 		// OpenTofu
 		{
