@@ -44,6 +44,7 @@
 			"groupSlug": "all-non-breaking"
 		},
 		{
+			// this rule will trigger renovate Warnings
 			"description": "Do not require releage age for npm lock file maintenance",
 			"matchDatasources": ["npm"],
 			"matchUpdateTypes": ["lockFileMaintenance"],
