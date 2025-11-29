@@ -31,7 +31,6 @@
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"ignorePresets": ["security:minimumReleaseAgeNpm"],
 	"lockFileMaintenance": {
 		"automerge": true
 	},
