@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: read
     uses: mestriga-org/github-workflows/.github/workflows/git-check.yml@main
-  pnpm-test:
+  pnpm-run-lint:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/pnpm-test.yml@main
+    uses: mestriga-org/github-workflows/.github/workflows/pnpm-run-lint.yml@main
