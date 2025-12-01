@@ -6,6 +6,8 @@ ignorePatchFailures: false
 
 minimumReleaseAge: 1440
 
+resolutionMode: lowest-direct
+
 strictPeerDependencies: true
 
 trustPolicy: no-downgrade
