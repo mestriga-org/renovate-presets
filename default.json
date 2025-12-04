@@ -32,9 +32,7 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": {
-		"automerge": true,
-		// Ignores missing timestamps, TODO solve warning
-		"minimumReleaseAgeBehaviour": "timestamp-optional"
+		"automerge": true
 	},
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
