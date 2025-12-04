@@ -38,11 +38,11 @@
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
 		{
-			"matchJsonata": ["isBreaking != true"],
+			"matchJsonata": ["$not(isBreaking)"],
 			"automerge": true
 		},
 		{
-			"matchJsonata": ["isBreaking = false"],
+			"matchJsonata": ["$not(isBreaking)"],
 			"groupName": "all non-breaking dependencies",
 			"groupSlug": "all-non-breaking"
 		},
@@ -60,7 +60,7 @@
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
-			// NOTE: did not try to override depName
+			// NOTE: did not try to set overrideDepName
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
