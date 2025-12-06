@@ -11,7 +11,7 @@
 		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config --flag=v10_config_lookup_from_file"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "6.2.0",
+		"@antfu/eslint-config": "6.3.0",
 		"eslint": "9.39.1"
 	}
 }
