@@ -1,3 +1,7 @@
+catalogMode: prefer
+
+cleanupUnusedCatalogs: true
+
 dedupeDirectDeps: true
 
 hoist: false
@@ -8,6 +12,11 @@ minimumReleaseAge: 1440
 
 resolutionMode: lowest-direct
 
+shellEmulator: true
+
 strictPeerDependencies: true
 
 trustPolicy: no-downgrade
+
+packages:
+  - .
