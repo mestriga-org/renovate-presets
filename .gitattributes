@@ -10,6 +10,8 @@
 *.json text whitespace=tabwidth=2,indent-with-non-tab
 *.mts  text whitespace=tabwidth=2,indent-with-non-tab
 
+*.sh text eol=lf
+
 *.yaml text whitespace=tabwidth=2,tab-in-indent
 *.yml  text whitespace=tabwidth=2,tab-in-indent
 
