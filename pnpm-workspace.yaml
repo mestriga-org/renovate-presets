@@ -18,9 +18,14 @@ strictPeerDependencies: true
 
 trustPolicy: no-downgrade
 
+trustPolicyExclude:
+  - '@yarnpkg/libzip@3.2.2'
+  - semver@5.7.2 || 6.3.1
+
 packages:
   - .
 
 catalog:
   '@antfu/eslint-config': 6.4.1
   eslint: 9.39.1
+  renovate: 42.39.1
