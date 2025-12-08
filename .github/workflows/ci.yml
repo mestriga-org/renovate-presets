@@ -24,3 +24,5 @@ jobs:
       - uses: renovatebot/github-action@v44.0.5
         with:
           docker-cmd-file: renovate-config-validator.sh
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker-volumes: .:/workspace:readonly

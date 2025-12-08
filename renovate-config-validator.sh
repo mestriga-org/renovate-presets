@@ -1,2 +1,2 @@
 #!/bin/sh -Cefu
-exec renovate-config-validator default.json
+exec renovate-config-validator /workspace/default.json
