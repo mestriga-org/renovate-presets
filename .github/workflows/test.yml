@@ -20,3 +20,5 @@ jobs:
           persist-credentials: false
           set-safe-directory: false
       - uses: docker://ghcr.io/renovatebot/renovate:42
+        with:
+          entrypoint: blam
