@@ -23,5 +23,6 @@ jobs:
           version: 29.1.2
           daemon-config: |
             {
-              "bridge": "none"
+              "bridge": "none",
+              "firewall-backend": "nftables"
             }
