@@ -18,3 +18,22 @@ jobs:
     permissions:
       contents: read
     uses: mestriga-org/github-workflows/.github/workflows/pnpm-run-lint.yml@main
+  renovate-preset-validate:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
+        with:
+          persist-credentials: false
+          set-safe-directory: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /default.json
+            /org-inherited-config.json
+            !*/
+      - uses: docker://ghcr.io/renovatebot/renovate:42.42
+        with:
+          entrypoint: renovate-config-validator
+          # TODO fix: all file args are validated as global config
+          args: --strict default.json org-inherited-config.json
