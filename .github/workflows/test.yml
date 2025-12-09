@@ -13,15 +13,10 @@ jobs:
   renovate-config-validate:
     permissions:
       contents: read
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
-      - run: |
-          sudo apt-get update
-          sudo apt-get install iptables
-      - uses: docker/setup-docker-action@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
         with:
-          version: 29.1.2
-          daemon-config: |
-            {
-              "bridge": "none"
-            }
+          persist-credentials: false
+          set-safe-directory: false
+      - uses: docker://ghcr.io/renovatebot/renovate:42
