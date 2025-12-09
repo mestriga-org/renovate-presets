@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+defaults:
+  run:
+    shell: bash
+env:
+  POSIXLY_CORRECT: y
+permissions: { }
+jobs:
+  renovate-config-validate:
+    permissions:
+      contents: read
+    runs-on: ubuntu-slim
+    container: ghcr.io/renovatebot/renovate:42
