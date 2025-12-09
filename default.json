@@ -28,8 +28,8 @@
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "Azure/bicep",
 			"versioningTemplate": "semver"
-		}
-		/* ,{
+		},
+		{
 			"customType": "jsonata",
 			"fileFormat": "yaml",
 			"managerFilePatterns": [
@@ -37,12 +37,10 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
+				"$append(jobs.*, runs).steps.$match(uses, /^docker:\/\/(.*):(.*)$/).{ \"depName\": groups[0], \"currentValue\": groups[1] }"
 			],
 			"datasourceTemplate": "docker"
-			// TODO capture currentValue and depName (or package name?)
 		}
-		*/
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": {
