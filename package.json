@@ -13,8 +13,5 @@
 	"devDependencies": {
 		"@antfu/eslint-config": "catalog:",
 		"eslint": "catalog:"
-	},
-	"renovate-config": [
-		"default.json"
-	]
+	}
 }
