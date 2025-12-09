@@ -1,5 +1,4 @@
-packages:
-  - .
+packages: []
 
 catalog:
   '@antfu/eslint-config': 6.4.1
