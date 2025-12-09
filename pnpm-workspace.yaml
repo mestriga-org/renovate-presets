@@ -18,6 +18,8 @@ ignorePatchFailures: false
 
 minimumReleaseAge: 1440
 
+packageManagerStrictVersion: true
+
 resolutionMode: lowest-direct
 
 shellEmulator: true
