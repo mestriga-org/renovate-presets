@@ -3,5 +3,4 @@
 	"extends": [
 		"local>mestriga-org/renovate-config"
 	]
-	err
 }
