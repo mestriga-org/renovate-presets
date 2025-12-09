@@ -3,7 +3,6 @@ packages: []
 catalog:
   '@antfu/eslint-config': 6.4.1
   eslint: 9.39.1
-  renovate: 42.39.1
 
 catalogMode: prefer
 

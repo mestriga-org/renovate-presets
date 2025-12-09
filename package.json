@@ -5,20 +5,14 @@
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm"
-		},
-		"runtime": {
-			"name": "node",
-			"version": "24.11.1",
-			"onFail": "download"
 		}
 	},
 	"scripts": {
-		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config --flag=v10_config_lookup_from_file && renovate-config-validator org-inherited-config.json default.json"
+		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config --flag=v10_config_lookup_from_file"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "catalog:",
-		"eslint": "catalog:",
-		"renovate": "catalog:"
+		"eslint": "catalog:"
 	},
 	"renovate-config": [
 		"default.json"
