@@ -15,10 +15,12 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
+      # do partial checkout
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
         with:
           persist-credentials: false
           set-safe-directory: false
-      - uses: docker://ghcr.io/renovatebot/renovate:42
+      # review entry point
+      - uses: docker://ghcr.io/renovatebot/renovate:42.42
         with:
           entrypoint: renovate-config-validator
