@@ -27,4 +27,5 @@ jobs:
       - uses: docker://ghcr.io/renovatebot/renovate:42.42
         with:
           entrypoint: renovate-config-validator
+          # TODO fix: all file args are validated as global config
           args: --strict default.json org-inherited-config.json
