@@ -10,30 +10,21 @@ env:
   POSIXLY_CORRECT: y
 permissions: { }
 jobs:
-  renovate-config-validate:
+  renovate-preset-validate:
     permissions:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      # todo check sparse chedkout patterns
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
         with:
           persist-credentials: false
           set-safe-directory: false
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            /renovate.json
-            /renovate.json5
-            /.github/renovate.json
-            /.github/renovate.json5
-            /.gitlab/renovate.json
-            /.gitlab/renovate.json5
-            /.renovaterc
-            /.renovaterc.json
-            /.renovaterc.json5
-            /package.json
+            /default.json
+            /org-inherited-config.json
             !*/
       - uses: docker://ghcr.io/renovatebot/renovate:42.42
         with:
           entrypoint: renovate-config-validator
-          args: --strict
+          args: --strict default.json org-inherited-config.json
