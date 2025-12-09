@@ -15,12 +15,25 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      # do partial checkout
+      # todo check sparse chedkout patterns
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
         with:
           persist-credentials: false
           set-safe-directory: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /renovate.json
+            /renovate.json5
+            /.github/renovate.json
+            /.github/renovate.json5
+            /.gitlab/renovate.json
+            /.gitlab/renovate.json5
+            /.renovaterc
+            /.renovaterc.json
+            /.renovaterc.json5
+            /package.json
+            !*/
       # review entry point
       - uses: docker://ghcr.io/renovatebot/renovate:42.42
         with:
-          entrypoint: renovate-config-validator
+          entrypoint: renovate-config-validator --strict
