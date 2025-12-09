@@ -21,4 +21,7 @@ jobs:
       - uses: docker/setup-docker-action@v4
         with:
           version: 29.1.2
-          rootless: true
+          daemon-config: |
+            {
+              "bridge": "none"
+            }
