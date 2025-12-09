@@ -15,3 +15,6 @@ jobs:
       contents: read
     runs-on: ubuntu-slim
     container: ghcr.io/renovatebot/renovate:42
+    steps:
+      - name: Check for dockerenv file
+        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
