@@ -19,5 +19,8 @@
 		"@antfu/eslint-config": "catalog:",
 		"eslint": "catalog:",
 		"renovate": "catalog:"
-	}
+	},
+	"renovate-config": [
+		"default.json"
+	]
 }
