@@ -55,8 +55,7 @@
 		},
 		{
 			"matchJsonata": ["$not(isBreaking)"],
-			"groupName": "all non-breaking dependencies",
-			"groupSlug": "all-non-breaking"
+			"groupName": "Non-breaking updates"
 		},
 		// OpenTofu
 		{
