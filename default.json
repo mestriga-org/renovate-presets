@@ -29,6 +29,20 @@
 			"depNameTemplate": "Azure/bicep",
 			"versioningTemplate": "semver"
 		}
+		/* ,{
+			"customType": "jsonata",
+			"fileFormat": "yaml",
+			"managerFilePatterns": [
+				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
+				"/(^|/)action\\.ya?ml$/"
+			],
+			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
+			],
+			"datasourceTemplate": "docker"
+			// TODO capture currentValue and depName (or package name?)
+		}
+		*/
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": {
