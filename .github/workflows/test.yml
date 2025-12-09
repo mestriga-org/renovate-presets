@@ -33,7 +33,7 @@ jobs:
             /.renovaterc.json5
             /package.json
             !*/
-      # review entry point
       - uses: docker://ghcr.io/renovatebot/renovate:42.42
         with:
-          entrypoint: renovate-config-validator --strict
+          entrypoint: renovate-config-validator
+          args: --strict
