@@ -18,3 +18,13 @@ jobs:
     permissions:
       contents: read
     uses: mestriga-org/github-workflows/.github/workflows/pnpm-run-lint.yml@main
+  renovate-config-validate:
+    permissions:
+      contents: read
+    runs-on: ubuntu-slim
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
+        with:
+          set-safe-directory: false
+          persist-credentials: false
+      - run: npm exec --package=renovate -- renovate-config-validator default.json
