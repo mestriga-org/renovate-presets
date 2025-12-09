@@ -28,5 +28,5 @@ const config: Promise<Linter.Config[]> = antfu(
 			'jsonc/comma-dangle': ['error', 'always-multiline'],
 		},
 	},
-).remove('antfu/yaml/pnpm-workspace')
+).remove('antfu/pnpm/pnpm-workspace-yaml-sort')
 export default config
