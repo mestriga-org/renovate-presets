@@ -69,6 +69,9 @@
 			"overridePackageName": "opentofu/opentofu"
 		}
 	],
+	"pinDigest": {
+		"automerge": true
+	},
 	// ensures consistent behavior without configuration of branch protection rules
 	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
 	"platformAutomerge": false,
