@@ -30,7 +30,7 @@
 			"depNameTemplate": "Azure/bicep",
 			"depTypeTemplate": "uses-with",
 			"versioningTemplate": "semver"
-		}/*,
+		}/* ,
 		{
 			"description": "Updates docker images of GHA steps.",
 			"customType": "regex",
