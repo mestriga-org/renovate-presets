@@ -36,7 +36,7 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				" +uses: docker://(?<depName>[^:@]+)(?::(?<currentValue>[^:@]+))?(?:@(?<currentDigest>sha256:[^:@]+))?"
+				"(?:^|[\\r\\n]) +uses[ \\t]*:[ \\t]+docker://(?<depName>[^:@ \\t\\r\\n]+)(?::(?<currentValue>[^:@ \\t\\r\\n]+))?(?:@(?<currentDigest>sha256:[^:@ \\t\\r\\n]+))?"
 				// "$append(jobs.*, runs).steps.$match(uses, /^docker:\\/\\/([^:@]+)(?::([^:@]+))?(?:@(sha256:[^:@]+))?$/).{ \"depName\": groups[0], \"currentValue\": groups[1], \"currentDigest\": groups[2] }"
 			],
 			"datasourceTemplate": "docker"
