@@ -52,10 +52,12 @@
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
 		{
+			"description": "Automerge non-breaking updates",
 			"matchJsonata": ["$not(isBreaking)"],
 			"automerge": true
 		},
 		{
+			"description": "Group non-breaking updates",
 			"matchJsonata": ["$not(isBreaking)"],
 			"groupName": "Non-breaking updates"
 		},
