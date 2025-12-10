@@ -37,7 +37,7 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				"$append(jobs.*, runs).steps.$match(uses, /^docker:\\/\\/([^:@]+):(([^:@]+)(?:@(sha256:[^:@]+))?)$/).{ \"depName\": groups[0], \"currentValue\": groups[1], \"extractVersion\": groups[2], \"currentDigest\": groups[3] }"
+				"$append(jobs.*, runs).steps.$match(uses, /^docker:\\/\\/([^:@]+)(?::([^:@]+))?(?:@(sha256:[^:@]+))?$/).{ \"depName\": groups[0], \"currentValue\": groups[1], \"currentDigest\": groups[2] }"
 			],
 			"datasourceTemplate": "docker"
 		}
