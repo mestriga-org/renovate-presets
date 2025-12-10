@@ -16,6 +16,7 @@
 	],
 	"customManagers": [
 		{
+			"description": "Updates the version input of the anthony-c-martin/setup-bicep GHA.",
 			"customType": "jsonata",
 			"fileFormat": "yaml",
 			"managerFilePatterns": [
@@ -30,6 +31,7 @@
 			"versioningTemplate": "semver"
 		},
 		{
+			"description": "Updates docker images of GHA steps.",
 			"customType": "regex",
 			"managerFilePatterns": [
 				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
