@@ -20,6 +20,8 @@ resolutionMode: lowest-direct
 
 shellEmulator: true
 
+strictDepBuilds: true
+
 strictPeerDependencies: true
 
 trustPolicy: no-downgrade
