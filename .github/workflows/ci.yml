@@ -34,7 +34,7 @@ jobs:
             /org-inherited-config.json
             !*/
       - name: renovate-config-validator
-        uses: docker://ghcr.io/renovatebot/renovate:42.43.0@sha256:55471bc598f7114bd0c38adbe5da8b3642c33efdaf8450bb2911127b7dfca2dc
+        uses: docker://docker.io/renovatebot/renovate:42.43.0@sha256:55471bc598f7114bd0c38adbe5da8b3642c33efdaf8450bb2911127b7dfca2dc
         with:
           entrypoint: renovate-config-validator
           # TODO fix: all file args are validated as global config
