@@ -1,7 +1,6 @@
 # TODO
 
-- set minimum release age for all dependency types
-  (this will also delay the need to update dev tools)
+- https://docs.renovatebot.com/key-concepts/minimum-release-age/#which-update-types-take-minimumreleaseage-into-account
 - automerge "pin" dependencies
 - configure branch protection rules
 - pin less dependencies, see
