@@ -36,8 +36,8 @@
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
 	"minimumReleaseAge": "3 days",
+	"minimumReleaseAgeBehaviour": "timestamp-optional",
 	"osvVulnerabilityAlerts": true,
-	// TODO add descriptions to each packageRules item
 	"packageRules": [
 		{
 			"automerge": true,
@@ -50,13 +50,18 @@
 			"groupSlug": "all-non-breaking",
 			"matchJsonata": ["$not(isBreaking)"]
 		},
-		// OpenTofu
 		{
+			"matchDatasources": ["npm"],
+			"minimumReleaseAgeBehaviour": "timestamp-required"
+		},
+		{
+			// TODO set description
 			"matchDatasources": ["terraform-{module,provider}"],
 			"matchFileNames": ["**/*.tofu"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
+			// TODO set description
 			// NOTE: overrideDepName made renovate run fail (2025-11-28)
 			"matchDepTypes": ["required_version"],
 			"matchFileNames": ["**/*.tofu"],
@@ -64,6 +69,7 @@
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
+			// TODO set description
 			// NOTE: did not try to set overrideDepName
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
@@ -74,13 +80,11 @@
 	// ensures consistent behavior without configuration of branch protection rules
 	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
 	"platformAutomerge": false,
-	// dedupes node packages
 	"postUpdateOptions": [
 		"npmDedupe",
 		"pnpmDedupe",
 		"yarnDedupeHighest"
 	],
-	// OpenTofu
 	"terraform-version": {
 		"managerFilePatterns": ["/(^|/)\\.opentofu-version$/"]
 	}
