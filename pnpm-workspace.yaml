@@ -4,7 +4,7 @@ catalog:
   '@antfu/eslint-config': 6.5.1
   eslint: 9.39.1
 
-catalogMode: prefer
+catalogMode: strict
 
 dedupeDirectDeps: true
 
@@ -17,8 +17,6 @@ minimumReleaseAge: 1440
 packageManagerStrictVersion: true
 
 resolutionMode: lowest-direct
-
-shellEmulator: true
 
 strictDepBuilds: true
 
