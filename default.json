@@ -35,6 +35,7 @@
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
+	"minimumReleaseAge": "3 days",
 	"osvVulnerabilityAlerts": true,
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
