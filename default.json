@@ -33,6 +33,7 @@
 			"versioningTemplate": "semver"
 		}
 	],
+	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
 	"minimumReleaseAge": "3 days",
