@@ -17,8 +17,11 @@
 	],
 	"customManagers": [
 		{
-			"description": "Updates the version input of the anthony-c-martin/setup-bicep GHA.",
 			"customType": "jsonata",
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "Azure/bicep",
+			"depTypeTemplate": "uses-with",
+			"description": "Updates the version input of the anthony-c-martin/setup-bicep GHA.",
 			"fileFormat": "yaml",
 			"managerFilePatterns": [
 				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
@@ -27,9 +30,6 @@
 			"matchStrings": [
 				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
 			],
-			"datasourceTemplate": "github-releases",
-			"depNameTemplate": "Azure/bicep",
-			"depTypeTemplate": "uses-with",
 			"versioningTemplate": "semver"
 		}
 	],
