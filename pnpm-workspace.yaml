@@ -6,8 +6,6 @@ catalog:
 
 catalogMode: prefer
 
-cleanupUnusedCatalogs: true
-
 dedupeDirectDeps: true
 
 hoist: false
