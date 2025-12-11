@@ -20,9 +20,7 @@
 	// sets the expected autodetected value as a fallback
 	"onboardingConfig": {
 		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-		"extends": [
-			"local>mestriga-org/renovate-config"
-		]
+		"extends": ["local>mestriga-org/renovate-config"]
 	},
 	// moves the default config file off the repo root
 	"onboardingConfigFileName": ".github/renovate.json",
