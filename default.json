@@ -40,26 +40,27 @@
 	// TODO add descriptions to each packageRules item
 	"packageRules": [
 		{
+			"automerge": true,
 			"description": "Automerge non-breaking updates",
-			"matchJsonata": ["$not(isBreaking)"],
-			"automerge": true
+			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
 			"description": "Group non-breaking updates",
-			"matchJsonata": ["$not(isBreaking)"],
-			"groupName": "Non-breaking updates"
+			"groupName": "all non-breaking dependencies",
+			"groupSlug": "all-non-breaking",
+			"matchJsonata": ["$not(isBreaking)"]
 		},
 		// OpenTofu
 		{
-			"matchFileNames": ["**/*.tofu"],
 			"matchDatasources": ["terraform-{module,provider}"],
+			"matchFileNames": ["**/*.tofu"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
 			// NOTE: overrideDepName made renovate run fail (2025-11-28)
+			"matchDepTypes": ["required_version"],
 			"matchFileNames": ["**/*.tofu"],
 			"matchManagers": ["terraform"],
-			"matchDepTypes": ["required_version"],
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
