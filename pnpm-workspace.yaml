@@ -21,7 +21,7 @@ minimumReleaseAge: 1440
 nodeOptions: >-
   ${NODE_OPTIONS:- }
   --no-addons
-  --disable-proto=delete
+  --disable-proto=throw
   --force-context-aware
   --force-node-api-uncaught-exceptions-policy
   --frozen-intrinsics
