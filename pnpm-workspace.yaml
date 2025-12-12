@@ -12,6 +12,8 @@ hoist: false
 
 ignorePatchFailures: false
 
+ignoreScripts: false
+
 minimumReleaseAge: 1440
 
 packageManagerStrictVersion: true
