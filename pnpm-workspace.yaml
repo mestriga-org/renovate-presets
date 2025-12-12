@@ -8,6 +8,8 @@ catalogMode: strict
 
 dedupeDirectDeps: true
 
+engineStrict: true
+
 hoist: false
 
 ignorePatchFailures: false
