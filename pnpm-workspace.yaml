@@ -18,6 +18,13 @@ ignoreScripts: false
 
 minimumReleaseAge: 1440
 
+nodeOptions: >-
+  ${NODE_OPTIONS:- }
+  --disable-proto=delete
+  --force-context-aware
+  --force-node-api-uncaught-exceptions-policy
+  --frozen-intrinsics
+
 packageManagerStrictVersion: true
 
 resolutionMode: lowest-direct
