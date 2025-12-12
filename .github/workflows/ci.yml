@@ -39,26 +39,3 @@ jobs:
           entrypoint: renovate-config-validator
           # TODO fix: all file args are validated as global config
           args: --strict default.json org-inherited-config.json
-  renovate-preset-validate-2:
-    permissions:
-      contents: read
-    runs-on: ubuntu-slim
-    steps:
-      - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          persist-credentials: false
-          set-safe-directory: false
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /default.json
-            !*/
-      - name: Setup Node.js
-        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
-        with:
-          node-version: '24'
-      - name: Validate Renovate config
-        shell: bash
-        run: npx --yes --package "$RENOVATE_VERSION" -- renovate-config-validator --strict default.json
-        env:
-          RENOVATE_VERSION: renovate@42.37
