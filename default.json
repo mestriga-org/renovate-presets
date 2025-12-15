@@ -52,26 +52,27 @@
 			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
+			"description": "Require timestamps for the npm data source",
 			"matchDatasources": ["npm"],
 			"minimumReleaseAgeBehaviour": "timestamp-required"
 		},
 		{
-			// TODO set description
+			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in .tofu files",
 			"matchDatasources": ["terraform-{module,provider}"],
 			"matchFileNames": ["**/*.tofu"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
-			// TODO set description
 			// NOTE: overrideDepName made renovate run fail (2025-11-28)
+			"description": "Override package name for required_version terraform dependencies in .tofu files.",
 			"matchDepTypes": ["required_version"],
 			"matchFileNames": ["**/*.tofu"],
 			"matchManagers": ["terraform"],
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
-			// TODO set description
 			// NOTE: did not try to set overrideDepName
+			"description": "Override package name for the terraform-version dependencies in.tofu files.",
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
