@@ -57,14 +57,15 @@
 			"minimumReleaseAgeBehaviour": "timestamp-required"
 		},
 		{
-			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in .tofu files",
+			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in *.tofu files",
 			"matchDatasources": ["terraform-{module,provider}"],
 			"matchFileNames": ["**/*.tofu"],
 			"registryUrls": ["https://registry.opentofu.org"]
 		},
 		{
 			// NOTE: overrideDepName made renovate run fail (2025-11-28)
-			"description": "Override package name for required_version terraform dependencies in .tofu files.",
+			"description": "Override package name for required_version terraform dependencies in *.tofu files.",
+			"matchDepNames": ["hashicorp/terraform"],
 			"matchDepTypes": ["required_version"],
 			"matchFileNames": ["**/*.tofu"],
 			"matchManagers": ["terraform"],
@@ -72,7 +73,8 @@
 		},
 		{
 			// NOTE: did not try to set overrideDepName
-			"description": "Override package name for the terraform-version dependencies in.tofu files.",
+			"description": "Override package name for terraform-version dependencies in .opentofu-version files.",
+			"matchDepNames": ["hashicorp/terraform"],
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
