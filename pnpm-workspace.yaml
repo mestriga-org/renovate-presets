@@ -2,7 +2,7 @@ packages: []
 
 catalog:
   '@antfu/eslint-config': 6.6.1
-  eslint: 9.39.1
+  eslint: 9.39.2
 
 catalogMode: strict
 
