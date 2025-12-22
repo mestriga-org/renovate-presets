@@ -1,5 +1,7 @@
 packages: []
 
+blockExoticSubdeps: true
+
 catalog:
   '@antfu/eslint-config': 6.7.1
   eslint: 9.39.2
