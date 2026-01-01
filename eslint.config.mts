@@ -3,6 +3,9 @@ import antfu from '@antfu/eslint-config'
 
 const config: Promise<Linter.Config[]> = antfu(
 	{
+		pnpm: {
+			sort: false,
+		},
 		stylistic: {
 			indent: 'tab',
 			overrides: {
@@ -29,6 +32,5 @@ const config: Promise<Linter.Config[]> = antfu(
 		},
 	},
 )
-	.remove('antfu/pnpm/pnpm-workspace-yaml-sort')
 	.removeRules('pnpm/yaml-enforce-settings')
 export default config
