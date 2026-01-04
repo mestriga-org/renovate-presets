@@ -10,6 +10,8 @@ catalogMode: strict
 
 dedupeDirectDeps: true
 
+enableGlobalVirtualStore: true
+
 engineStrict: true
 
 hoist: false
