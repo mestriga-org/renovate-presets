@@ -32,6 +32,11 @@ nodeOptions: >-
   --no-global-search-paths
   --tls-min-v1.3
 
+packageExtensions:
+  eslint-plugin-antfu:
+    peerDependencies:
+      '@typescript-eslint/utils': '*'
+
 packageManagerStrictVersion: true
 
 resolutionMode: lowest-direct
