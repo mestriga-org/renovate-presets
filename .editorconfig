@@ -2,7 +2,7 @@
 indent_size = 4
 indent_style = tab
 
-[*.{json,mts}]
+[*.{json,ts}]
 indent_size = 2
 
 [*.sh]
