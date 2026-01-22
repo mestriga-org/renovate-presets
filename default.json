@@ -52,9 +52,15 @@
 			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
+
 			"description": "Require timestamps for the npm data source",
 			"matchDatasources": ["npm"],
 			"minimumReleaseAgeBehaviour": "timestamp-required"
+		},
+		{
+			"description": "Do not require Minimum Release Age for update types that are controlled by the package manager",
+			"matchUpdateTypes": ["lockFileMaintenance"],
+			"minimumReleaseAge": null
 		},
 		{
 			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in *.tofu files",
