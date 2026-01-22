@@ -18,6 +18,12 @@ const config: Promise<Linter.Config[]> = antfu(
 		},
 	},
 	{
+		files: ['pnpm-workspace.yaml'],
+		rules: {
+			'pnpm/yaml-enforce-settings': 'off',
+		},
+	},
+	{
 		files: ['package.json'],
 		rules: {
 			'jsonc/no-comments': ['error'],
@@ -32,5 +38,4 @@ const config: Promise<Linter.Config[]> = antfu(
 		},
 	},
 )
-	.removeRules('pnpm/yaml-enforce-settings')
 export default config
