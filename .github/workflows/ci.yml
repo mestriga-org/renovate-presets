@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
           set-safe-directory: false
@@ -34,7 +34,7 @@ jobs:
             /org-inherited-config.json
             !*/
       - name: renovate-config-validator
-        uses: docker://renovate/renovate:42.84.2@sha256:8f818dc7f121a48a4d49412516588b8c4c900697455174983328e796f24971ab
+        uses: docker://renovate/renovate:42.85.4@sha256:9c8c3f3947d11960f19855636d2e22d4bed60634697ff2bd170f53f240b3bfff
         with:
           entrypoint: renovate-config-validator
           # TODO fix: all file args are validated as global config
