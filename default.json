@@ -36,6 +36,10 @@
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
+	/*
+		enable minimumReleaseAge for all updates, but set minimumReleaseAgeBehaior
+		to timestamp-optional to allow updates to proceed with a warning
+	*/
 	"minimumReleaseAge": "3 days",
 	"minimumReleaseAgeBehaviour": "timestamp-optional",
 	"osvVulnerabilityAlerts": true,
@@ -62,6 +66,7 @@
 			"matchUpdateTypes": ["lockFileMaintenance"],
 			// TODO determine if prBodyNotes are merged and deduplicate this note if needed
 			"prBodyNotes": ["⚠️ Renovate's lock file maintenance functionality does not support validating Minimum Release Age, as the package manager performs the required changes to update package(s). Confirm whether your package manager perform its own validation for the Minimum Release Age of packages."],
+			"minimumReleaseAgeBehaviour": "timestamp-required",
 			"minimumReleaseAge": null
 		},
 		{

@@ -1,5 +1,7 @@
 # TODO
 
+- get notifications from dashboard warnings
+- set "minimumReleaseAgeBehaviour" = "timestamp-required" for updates known to have timestamps
 - https://docs.renovatebot.com/key-concepts/minimum-release-age/#which-update-types-take-minimumreleaseage-into-account
 - automerge "pin" dependencies
 - configure branch protection rules
