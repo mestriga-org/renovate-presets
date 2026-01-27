@@ -28,7 +28,7 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
+				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/i].{ \"currentValue\": with.version }"
 			],
 			"versioningTemplate": "semver"
 		},
@@ -45,7 +45,7 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/powershell(@|$)/].{ \"currentValue\": with.azPSVersion }"
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/powershell(@|$)/i].{ \"currentValue\": with.azPSVersion }"
 			],
 			"registryUrlTemplate": "https://www.powershellgallery.com/api/v2"
 		}
