@@ -31,6 +31,23 @@
 				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/].{ \"currentValue\": with.version }"
 			],
 			"versioningTemplate": "semver"
+		},
+		{
+			// TODO filter out 'latest'
+			"customType": "jsonata",
+			"datasourceTemplate": "nuget",
+			"depNameTemplate": "Az",
+			"depTypeTemplate": "uses-with",
+			"description": "Updates the azPSVersion input of the Azure/powershell GHA.",
+			"fileFormat": "yaml",
+			"managerFilePatterns": [
+				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
+				"/(^|/)action\\.ya?ml$/"
+			],
+			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/powershell(@|$)/].{ \"currentValue\": with.azPSVersion }"
+			],
+			"registryUrlTemplate": "https://www.powershellgallery.com/api/v2"
 		}
 	],
 	"dependencyDashboardLabels": ["dependencies"],
