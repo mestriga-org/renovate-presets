@@ -23,14 +23,9 @@ ignoreScripts: false
 minimumReleaseAge: 1440
 
 nodeOptions: >-
-  ${NODE_OPTIONS:- }
-  --no-addons
-  --disable-proto=throw
-  --force-context-aware
-  --force-node-api-uncaught-exceptions-policy
-  --frozen-intrinsics
-  --no-global-search-paths
-  --tls-min-v1.3
+  ${NODE_OPTIONS:- } --no-addons --disable-proto=throw --force-context-aware
+  --force-node-api-uncaught-exceptions-policy --frozen-intrinsics
+  --no-global-search-paths --tls-min-v1.3
 
 packageExtensions:
   eslint-plugin-antfu:
@@ -52,3 +47,6 @@ trustPolicyExclude:
   - semver@5.7.2 || 6.3.1
 
 verifyDepsBeforeRun: install
+minimumReleaseAgeExclude:
+  # Renovate security update: pnpm@10.28.2
+  - pnpm@10.28.2
