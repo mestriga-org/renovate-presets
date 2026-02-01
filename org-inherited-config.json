@@ -10,7 +10,7 @@
 // onboarding* settings are global-only
 
 {
-	"$schema": "https://docs.renovatebot.com/renovate-global-schema.json",
+	"$schema": "https://docs.renovatebot.com/renovate-inherited-schema.json",
 	// forces the default fork processing mode for the Mend Renovate App (auto probably makes no sense)
 	"forkProcessing": "auto",
 	// overrides configuration from the Mend App UI with the default
