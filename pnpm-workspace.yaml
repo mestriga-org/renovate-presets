@@ -12,6 +12,8 @@ dedupeDirectDeps: true
 
 enableGlobalVirtualStore: true
 
+enablePrePostScripts: false
+
 engineStrict: true
 
 hoist: false
