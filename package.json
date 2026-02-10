@@ -8,7 +8,7 @@
 		}
 	},
 	"scripts": {
-		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config --flag=v10_config_lookup_from_file"
+		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "catalog:",
