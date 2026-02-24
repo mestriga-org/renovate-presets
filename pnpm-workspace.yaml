@@ -4,7 +4,7 @@ blockExoticSubdeps: true
 
 catalog:
   '@antfu/eslint-config': 7.4.3
-  eslint: 9.39.2
+  eslint: 9.39.3
 
 catalogMode: strict
 
