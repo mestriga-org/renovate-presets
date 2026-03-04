@@ -51,7 +51,12 @@
 	],
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"lockFileMaintenance": { "automerge": true },
+	"lockFileMaintenance": {
+		"automerge": true,
+		"schedule": [
+			"at any time"
+		]
+	},
 	/*
 		enable minimumReleaseAge for all updates, but set minimumReleaseAgeBehaior
 		to timestamp-optional to allow updates to proceed with a warning
