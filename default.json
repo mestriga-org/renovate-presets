@@ -58,6 +58,10 @@
 	*/
 	"minimumReleaseAge": "3 days",
 	"minimumReleaseAgeBehaviour": "timestamp-optional",
+	// for pnpm v10.32 (engine-strict is shared with npm and strict-peer-deps is for npm only)
+	// only includes settings that are relevant with --lockfile-only --ignore-scripts
+	"npmrc": "engine-strict=true\nstrict-peer-deps=true\nblock-exotic-subdeps=true\ndisallow-workspace-cycles=true\nignore-patch-failures=false\nminimum-release-age=1440\npackage-manager-strict-version=true\nstrict-dep-builds=true\nstrict-peer-dependencies=true\ntrust-policy=no-downgrade",
+	"npmrcMerge": true,
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
