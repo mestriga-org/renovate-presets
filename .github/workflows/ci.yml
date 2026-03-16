@@ -3,11 +3,6 @@ on:
     branches: [main]
   push:
     branches: [main]
-defaults:
-  run:
-    shell: bash
-env:
-  POSIXLY_CORRECT: y
 permissions: { }
 jobs:
   git-check:
@@ -21,21 +16,4 @@ jobs:
   renovate-preset-validate:
     permissions:
       contents: read
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-        with:
-          persist-credentials: false
-          set-safe-directory: false
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /default.json
-            /org-inherited-config.json
-            !*/
-      - name: renovate-config-validator
-        uses: docker://renovate/renovate:43.66.0@sha256:87a051477bd7a2f76f592ae8a06d37fefa645abdca12d959133010a86fe987d5
-        with:
-          entrypoint: renovate-config-validator
-          # TODO fix: all file args are validated as global config
-          args: --strict default.json org-inherited-config.json
+    uses: mestriga-org/github-workflows/.github/workflows/renovate-preset-validate.yml@main
