@@ -52,6 +52,33 @@
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
+	"logLevelRemap": [
+		{
+			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
+			"matchMessage": "Failed to find required \"packages\" array in pnpm-workspace.yaml",
+			"newLogLevel": "warn"
+		},
+		{
+			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
+			"matchMessage": "Failed to parse pnpm-workspace.yaml",
+			"newLogLevel": "warn"
+		},
+		{
+			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
+			"matchMessage": "Failed to locate pnpm-workspace.yaml in a parent directory.",
+			"newLogLevel": "warn"
+		},
+		{
+			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
+			"matchMessage": "Failed to find a pnpm-lock.yaml sibling for the workspace.",
+			"newLogLevel": "warn"
+		},
+		{
+			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
+			"matchMessage": "Didn't find the package in the pnpm workspace",
+			"newLogLevel": "warn"
+		}
+	],
 	/*
 		enable minimumReleaseAge for all updates, but set minimumReleaseAgeBehaior
 		to timestamp-optional to allow updates to proceed with a warning
