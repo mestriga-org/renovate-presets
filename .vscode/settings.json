@@ -1,0 +1,8 @@
+{
+	"json.schemas": [
+		{
+			"fileMatch": ["/org-inherited-config.json"],
+			"url": "https://docs.renovatebot.com/renovate-inherited-schema.json",
+		},
+	],
+}
