@@ -4,6 +4,7 @@ catalog:
   '@antfu/eslint-config': 7.7.2
   eslint: 10.0.3
 catalogMode: strict
+cleanupUnusedCatalogs: true
 dedupeDirectDeps: true
 enableGlobalVirtualStore: true
 enablePrePostScripts: false
