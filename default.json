@@ -157,6 +157,7 @@
 		"pnpmDedupe",
 		"yarnDedupeHighest"
 	],
+	"semanticCommits": "enabled",
 	"terraform-version": {
 		"managerFilePatterns": ["/(^|/)\\.opentofu-version$/"]
 	}
