@@ -4,6 +4,7 @@
 	"extends": [
 		// config:best-practices extends config:recommended with settings for pinning, abandonment, config migration and minimumReleaseAge
 		"config:best-practices",
+		":automergeDigest",
 		":assignee(mestriga)",
 		":configMigration",
 		// has repo config requirements: https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts
