@@ -13,7 +13,8 @@
 		":prHourlyLimitNone",
 		":rebaseStalePrs",
 		":timezone(America/Sao_Paulo)",
-		"customManagers:biomeVersions"
+		"customManagers:biomeVersions",
+		"helpers:pinGitHubActionDigestsToSemver"
 	],
 	"customManagers": [
 		{
