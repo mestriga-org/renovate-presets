@@ -5,6 +5,7 @@ catalog:
 catalogMode: strict
 cleanupUnusedCatalogs: true
 dedupeDirectDeps: true
+dedupePeers: true
 enableGlobalVirtualStore: true
 enablePrePostScripts: false
 engineStrict: true
