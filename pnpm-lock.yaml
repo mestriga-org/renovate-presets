@@ -8,8 +8,8 @@ settings:
 catalogs:
   default:
     '@antfu/eslint-config':
-      specifier: 8.1.0
-      version: 8.1.0
+      specifier: 8.1.1
+      version: 8.1.1
     eslint:
       specifier: 10.2.0
       version: 10.2.0
@@ -20,15 +20,15 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: 'catalog:'
-        version: 8.1.0(@typescript-eslint/rule-tester@8.58.0)(@typescript-eslint/typescript-estree@8.58.1)(@typescript-eslint/utils@8.58.1)(@vue/compiler-sfc@3.5.32)(eslint@10.2.0)(typescript@6.0.2)
+        version: 8.1.1(@typescript-eslint/rule-tester@8.58.0)(@typescript-eslint/typescript-estree@8.58.1)(@typescript-eslint/utils@8.58.1)(@vue/compiler-sfc@3.5.32)(eslint@10.2.0)(typescript@6.0.2)
       eslint:
         specifier: 'catalog:'
         version: 10.2.0
 
 packages:
 
-  '@antfu/eslint-config@8.1.0':
-    resolution: {integrity: sha512-bDtEwLb9zQVjeg7IU1tSw/LMF7HUwwG9hEuG78vaIrSBnk+ls6vIK8UTLVZUXV71XMAbtlcU3JEjEjFF3tf0Pw==}
+  '@antfu/eslint-config@8.1.1':
+    resolution: {integrity: sha512-y5/eAKlJUbQpeES2Pnb0i/VgbmqQ+srHJJNqbTKEBsxdLy3h1BqdS00zDpE+YeP71EWmlYJSTUhcJg4n4yMeAQ==}
     hasBin: true
     peerDependencies:
       '@angular-eslint/eslint-plugin': ^21.1.0
@@ -1330,7 +1330,7 @@ packages:
 
 snapshots:
 
-  '@antfu/eslint-config@8.1.0(@typescript-eslint/rule-tester@8.58.0)(@typescript-eslint/typescript-estree@8.58.1)(@typescript-eslint/utils@8.58.1)(@vue/compiler-sfc@3.5.32)(eslint@10.2.0)(typescript@6.0.2)':
+  '@antfu/eslint-config@8.1.1(@typescript-eslint/rule-tester@8.58.0)(@typescript-eslint/typescript-estree@8.58.1)(@typescript-eslint/utils@8.58.1)(@vue/compiler-sfc@3.5.32)(eslint@10.2.0)(typescript@6.0.2)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 1.2.0
