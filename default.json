@@ -21,13 +21,14 @@
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "Azure/bicep",
 			"depTypeTemplate": "uses-with",
-			"description": "Updates the version input of the anthony-c-martin/setup-bicep GHA.",
+			"description": "Updates the input specifying the bicep version of the Azure/bicep-deploy and anthony-c-martin/setup-bicep GHAs.",
 			"fileFormat": "yaml",
 			"managerFilePatterns": [
 				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/bicep-deploy(@|$)/i].{ \"currentValue\": with.bicep-version }",
 				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/i].{ \"currentValue\": with.version }"
 			],
 			"versioningTemplate": "semver"
