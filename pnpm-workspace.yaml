@@ -1,7 +1,7 @@
 packages: []
 catalog:
   '@antfu/eslint-config': 8.2.0
-  eslint: 10.2.0
+  eslint: 10.2.1
 catalogMode: strict
 cleanupUnusedCatalogs: true
 dedupeDirectDeps: true
