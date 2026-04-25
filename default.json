@@ -107,9 +107,9 @@
 			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
-			"description": "Group non-breaking updates",
-			"groupName": "all non-breaking dependencies",
-			"groupSlug": "all-non-breaking",
+			"description": "Group non-breaking updates by manager",
+			"groupName": "all non-breaking {{manager}} dependencies",
+			"groupSlug": "all-non-breaking-{{manager}}",
 			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
