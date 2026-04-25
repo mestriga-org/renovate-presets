@@ -12,7 +12,7 @@ jobs:
   pnpm-audit:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/pnpm-audit.yml@main
+    uses: mestriga-org/github-workflows/.github/workflows/pnpm-audit.yml@ba0906f18452a9e58cdd5371542ec524e8e20cf2 # main
   pnpm-run-lint:
     permissions:
       contents: read
