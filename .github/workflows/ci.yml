@@ -8,12 +8,12 @@ jobs:
   git-check:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/git-check.yml@0e5c58d0e386a7721ca3708938fbd813a310362f # main
+    uses: mestriga-org/github-workflows/.github/workflows/git-check.yml@7334853a3dea90a0cf3af4025a5bccef104eb190 # main
   pnpm-run-lint:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/pnpm-run-lint.yml@0e5c58d0e386a7721ca3708938fbd813a310362f # main
+    uses: mestriga-org/github-workflows/.github/workflows/pnpm-run-lint.yml@7334853a3dea90a0cf3af4025a5bccef104eb190 # main
   renovate-preset-validate:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/renovate-preset-validate.yml@0e5c58d0e386a7721ca3708938fbd813a310362f # main
+    uses: mestriga-org/github-workflows/.github/workflows/renovate-preset-validate.yml@7334853a3dea90a0cf3af4025a5bccef104eb190 # main
