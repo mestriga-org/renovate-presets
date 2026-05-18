@@ -5,16 +5,14 @@
 .gitattributes text
 .gitignore     text
 *.md           text
-/.npmrc        text
 
 *.json text whitespace=tabwidth=2,indent-with-non-tab
 *.ts   text whitespace=tabwidth=2,indent-with-non-tab
 
-*.sh text eol=lf
-
 *.yaml text whitespace=tabwidth=2,tab-in-indent
 *.yml  text whitespace=tabwidth=2,tab-in-indent
 
+/.npmrc         text eol=lf
 /package.json        eol=lf
 /pnpm-lock.yaml      eol=lf
 /pnpm-workspace.yaml eol=lf

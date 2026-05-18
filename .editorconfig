@@ -12,5 +12,5 @@ end_of_line = lf
 indent_size = 2
 indent_style = space
 
-[/{package.json,pnpm-lock.yaml,pnpm-workspace.yaml}]
+[/{.npmrc,package.json,pnpm-lock.yaml,pnpm-workspace.yaml}]
 end_of_line = lf
