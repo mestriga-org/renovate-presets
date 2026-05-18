@@ -8,9 +8,7 @@ dedupeDirectDeps: true
 dedupePeers: true
 disallowWorkspaceCycles: true
 enablePrePostScripts: false
-engineStrict: true
 hoist: false
-ignorePatchFailures: false
 ignoreScripts: false
 nodeOptions: >-
   ${NODE_OPTIONS- } --no-addons --disable-proto=throw --force-context-aware
