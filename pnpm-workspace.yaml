@@ -11,6 +11,7 @@ enablePrePostScripts: false
 engineStrict: true
 hoist: false
 ignorePatchFailures: false
+ignoreScripts: false
 minimumReleaseAge: 1440
 nodeOptions: >-
   ${NODE_OPTIONS- } --no-addons --disable-proto=throw --force-context-aware
