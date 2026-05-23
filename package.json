@@ -1,14 +1,9 @@
 {
 	"type": "module",
 	"private": true,
+	"packageManager": "pnpm@10.33.4",
 	"engines": {
-		"pnpm": "10.33.4"
-	},
-	"devEngines": {
-		"packageManager": {
-			"name": "pnpm",
-			"version": "10.33.4"
-		}
+		"npm": "<0"
 	},
 	"scripts": {
 		"lint": "eslint --concurrency=auto --flag=unstable_native_nodejs_ts_config"
