@@ -1,6 +1,6 @@
 packages: []
 catalog:
-  '@antfu/eslint-config': 9.1.0
+  '@antfu/eslint-config': 9.2.0
   eslint: 10.7.0
 catalogMode: strict
 cleanupUnusedCatalogs: true
