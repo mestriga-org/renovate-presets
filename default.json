@@ -156,6 +156,11 @@
 			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
 			"matchManagers": ["terraform-version"],
 			"overridePackageName": "opentofu/opentofu"
+		},
+		{
+			"matchDatasources": "github-digest",
+			"matchDepNames": "mestriga-org/github-workflows",
+			"pinDigests": "false"
 		}
 	],
 	"pinDigest": { "automerge": true },
