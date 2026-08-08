@@ -160,7 +160,7 @@
 		{
 			"matchDatasources": "github-digest",
 			"matchDepNames": "mestriga-org/github-workflows",
-			"pinDigests": "false"
+			"pinDigests": false
 		}
 	],
 	"pinDigest": { "automerge": true },
