@@ -8,7 +8,7 @@ jobs:
   git-check:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/git-check.yml@e726db5566e5cd20976e504f3056f8caeaaae5ed # main
+    uses: mestriga-org/github-workflows/.github/workflows/git-check.yml@main
   pnpm-run-lint:
     permissions:
       contents: read
