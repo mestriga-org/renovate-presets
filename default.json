@@ -107,12 +107,6 @@
 			"matchJsonata": ["$not(isBreaking)"]
 		},
 		{
-			"description": "Group non-breaking updates by manager",
-			"groupName": "all non-breaking {{manager}} dependencies",
-			"groupSlug": "all-non-breaking-{{manager}}",
-			"matchJsonata": ["$not(isBreaking)"]
-		},
-		{
 			// based on helper:pinGitHubActionDigestsToSemver
 			// "https://github.com/renovatebot/renovate/blob/43.96.0/lib/config/presets/internal/helpers.preset.ts#L74-L85"
 			"description": "Convert pinned GitHub Action digests to SemVer.",
