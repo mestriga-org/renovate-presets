@@ -9,7 +9,6 @@ dedupePeers: true
 disallowWorkspaceCycles: true
 enablePrePostScripts: false
 hoist: false
-ignoreScripts: false
 nodeOptions: >-
   ${NODE_OPTIONS- } --no-addons --disable-proto=throw --force-context-aware
   --force-node-api-uncaught-exceptions-policy --frozen-intrinsics
