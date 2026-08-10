@@ -13,6 +13,7 @@ const config: Promise<Linter.Config[]> = antfu(
 			},
 		},
 		type: 'lib',
+		typescript: true,
 	},
 	{
 		files: ['pnpm-workspace.yaml'],
