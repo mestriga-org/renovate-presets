@@ -154,6 +154,7 @@
 		"pnpmDedupe",
 		"yarnDedupeHighest"
 	],
+	"rangeStrategy": "bump",
 	"semanticCommits": "enabled",
 	"terraform-version": {
 		"managerFilePatterns": ["/(^|/)\\.opentofu-version$/"]
