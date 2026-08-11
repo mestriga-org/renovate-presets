@@ -12,6 +12,7 @@
 		":label(dependencies)", // same as Dependabot's default
 		":prHourlyLimitNone",
 		":rebaseStalePrs",
+		":separateMultipleMajorReleases",
 		":timezone(America/Sao_Paulo)",
 		"customManagers:biomeVersions"
 	],
