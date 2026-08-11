@@ -121,16 +121,6 @@
 			"matchDepNames": "mestriga-org/github-workflows",
 			"pinDigests": false
 		},
-		{
-			"groupName": "wrangler monorepo",
-			"matchSourceUrls": ["https://github.com/cloudflare/workers-sdk"],
-			"matchUpdateTypes": [
-				"digest",
-				"patch",
-				"minor",
-				"major"
-			]
-		},
 		// #region OpenTofu
 		{
 			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in *.tofu files",
