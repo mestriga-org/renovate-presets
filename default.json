@@ -140,6 +140,16 @@
 			"overridePackageName": "opentofu/opentofu"
 		},
 		{
+			"groupName": "opentofu monorepo",
+			"matchSourceUrls": ["https://github.com/opentofu/opentofu"],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			]
+		},
+		{
 			"matchDatasources": "github-digest",
 			"matchDepNames": "mestriga-org/github-workflows",
 			"pinDigests": false
