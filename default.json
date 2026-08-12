@@ -164,8 +164,7 @@
 	"platformAutomerge": false,
 	"postUpdateOptions": [
 		"npmDedupe",
-		"pnpmDedupe",
-		"yarnDedupeHighest"
+		"pnpmDedupe"
 	],
 	"rangeStrategy": "bump",
 	"semanticCommits": "enabled",
