@@ -155,8 +155,18 @@
 				"minor",
 				"major"
 			]
-		}
+		},
 		// #endregion
+		{
+			"groupName": "workers-sdk monorepo",
+			"matchSourceUrls": ["https://github.com/cloudflare/workers-sdk"],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			]
+		}
 	],
 	"pinDigest": { "automerge": true },
 	// ensures consistent behavior without configuration of branch protection rules
