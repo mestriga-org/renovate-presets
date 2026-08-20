@@ -82,6 +82,8 @@
 			"newLogLevel": "warn"
 		}
 	],
+	// allows CalVer updates
+	"maxMajorIncrement": 100000,
 	/*
 		enable minimumReleaseAge for all updates, but set minimumReleaseAgeBehaior
 		to timestamp-optional to allow updates to proceed with a warning
