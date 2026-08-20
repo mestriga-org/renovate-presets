@@ -3,12 +3,13 @@ catalog:
   '@antfu/eslint-config': 9.3.0
   eslint: 10.8.1
 catalogMode: strict
-cleanupUnusedCatalogs: true
+catalogPrune: true
 dedupeDirectDeps: true
 dedupePeers: true
 disallowWorkspaceCycles: true
 enablePrePostScripts: false
 hoist: false
+minimumReleaseAgeExcludePrune: true
 nodeOptions: >-
   ${NODE_OPTIONS- }
   --no-addons
