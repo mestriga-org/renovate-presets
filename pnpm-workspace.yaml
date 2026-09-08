@@ -5,7 +5,7 @@ audit:
 
 catalog:
   '@antfu/eslint-config': 9.5.1
-  eslint: 10.9.1
+  eslint: 10.10.0
 catalogMode: strict
 
 catalogPrune: true
