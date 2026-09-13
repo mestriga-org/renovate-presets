@@ -33,3 +33,4 @@ strictPeerDependencies: true
 trustPolicyExclude:
   - '@yarnpkg/libzip@3.2.2'
   - semver@5.7.2 || 6.3.1
+trustPolicyExcludePrune: true
