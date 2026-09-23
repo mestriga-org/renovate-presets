@@ -1,10 +1,24 @@
 import type { Linter } from 'eslint'
 import antfu from '@antfu/eslint-config'
+import jsonSchemaValidator from 'eslint-plugin-json-schema-validator'
 
 const config: Promise<Linter.Config[]> = antfu(
 	{
+		plugins: {
+			'json-schema-validator': jsonSchemaValidator,
+		},
 		pnpm: {
 			sort: false,
+		},
+		rules: {
+			'json-schema-validator/no-invalid': 'warn',
+		},
+		settings: {
+			'json-schema-validator': {
+				cache: {
+					path: 'node_modules/.cache/eslint/plugin-json-schema-validator',
+				},
+			},
 		},
 		stylistic: {
 			indent: 'tab',
