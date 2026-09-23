@@ -18,7 +18,35 @@ const config: Promise<Linter.Config[]> = antfu(
 	{
 		files: ['pnpm-workspace.yaml'],
 		rules: {
-			'pnpm/yaml-enforce-settings': 'off',
+			'pnpm/yaml-enforce-settings': ['error', {
+				forbiddenFields: [
+					// TODO complete
+					'enableGlobalVirtualStore',
+					'engineStrict',
+					'minimumReleaseAge',
+					'minimumReleaseAgeIgnoreMissingTime',
+					'minimumReleaseAgeStrict',
+					'scriptShell',
+					'trustPolicy',
+					'virtualStoreDirMaxLength',
+					'virtualStoreType',
+				],
+				requiredFields: ['packages'],
+				settings: {
+					audit: { ignorePrune: true },
+					catalogMode: 'strict',
+					catalogPrune: true,
+					dedupeDirectDeps: true,
+					dedupePeers: true,
+					disallowWorkspaceCycles: true,
+					enablePrePostScripts: false,
+					hoist: false,
+					minimumReleaseAgeExcludePrune: true,
+					resolutionMode: 'lowest-direct',
+					strictPeerDependencies: true,
+					trustPolicyExcludePrune: true,
+				},
+			}],
 		},
 	},
 	{
