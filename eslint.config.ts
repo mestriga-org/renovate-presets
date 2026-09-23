@@ -11,7 +11,7 @@ const config: Promise<Linter.Config[]> = antfu(
 			sort: false,
 		},
 		rules: {
-			'json-schema-validator/no-invalid': 'warn',
+			'json-schema-validator/no-invalid': 'error',
 		},
 		settings: {
 			'json-schema-validator': {
