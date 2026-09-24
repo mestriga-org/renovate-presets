@@ -12,9 +12,6 @@
 *.yaml text whitespace=tabwidth=2,tab-in-indent
 *.yml  text whitespace=tabwidth=2,tab-in-indent
 
-/.npmrc         text eol=lf
-/package.json        eol=lf
-/pnpm-lock.yaml      eol=lf
-/pnpm-workspace.yaml eol=lf
+/pnpm-lock.yaml eol=lf
 
 /.node-version text working-tree-encoding=ASCII
