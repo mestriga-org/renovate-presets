@@ -35,7 +35,6 @@ const config: Promise<Linter.Config[]> = antfu(
 			'json-schema-validator/no-invalid': 'off', // temporary unitl v12.6 schema is published
 			'pnpm/yaml-enforce-settings': ['error', {
 				forbiddenFields: [
-					'allowBuilds',
 					'allowedDeprecatedVersions',
 					'allowNonAppliedPatches',
 					'allowUnusedPatches',
