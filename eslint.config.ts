@@ -178,7 +178,6 @@ const config: Promise<Linter.Config[]> = antfu(
 					'tasks',
 					'trustLockfile',
 					'trustPolicy',
-					'trustPolicyExclude',
 					'trustPolicyIgnoreAfter',
 					'unsafePerm',
 					'update',
