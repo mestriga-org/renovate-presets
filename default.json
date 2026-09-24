@@ -174,10 +174,6 @@
 	// ensures consistent behavior without configuration of branch protection rules
 	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
 	"platformAutomerge": false,
-	"postUpdateOptions": [
-		"npmDedupe",
-		"pnpmDedupe"
-	],
 	"rangeStrategy": "bump",
 	"semanticCommits": "enabled",
 	"terraform-version": {
