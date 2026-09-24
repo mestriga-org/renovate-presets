@@ -6,7 +6,7 @@
 		"npm": "<0"
 	},
 	"scripts": {
-		"lint": "NODE_OPTIONS=$NODE_OPTIONS' --no-addons --disable-proto=throw --frozen-intrinsics --permission --allow-fs-read=* --allow-fs-write=node_modules/.cache/eslint/* --allow-net --allow-worker' eslint --max-warnings=0 --concurrency=auto --flag=unstable_native_nodejs_ts_config"
+		"lint": "NODE_OPTIONS=$NODE_OPTIONS' --no-addons --frozen-intrinsics --disable-proto=throw --permission --allow-fs-read=* --allow-fs-write=node_modules/.cache/eslint/* --allow-net --allow-worker' eslint --max-warnings=0 --concurrency=auto --flag=unstable_native_nodejs_ts_config"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "catalog:",

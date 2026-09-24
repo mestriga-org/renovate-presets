@@ -20,7 +20,7 @@ minimumReleaseAgeExcludePrune: true
 nodeOptions: >-
   ${NODE_OPTIONS- }
   --no-addons
-  --disable-proto=throw
+  --disable-proto=delete
   --force-context-aware
   --force-node-api-uncaught-exceptions-policy
   --frozen-intrinsics
