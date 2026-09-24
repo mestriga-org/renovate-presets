@@ -32,6 +32,7 @@ const config: Promise<Linter.Config[]> = antfu(
 	{
 		files: ['pnpm-workspace.yaml'],
 		rules: {
+			'json-schema-validator/no-invalid': 'off', //temporary
 			'pnpm/yaml-enforce-settings': ['error', {
 				forbiddenFields: [
 					// TODO complete
@@ -48,6 +49,7 @@ const config: Promise<Linter.Config[]> = antfu(
 				requiredFields: ['packages'],
 				settings: {
 					audit: { ignorePrune: true },
+					autoDedupe: true,
 					catalogMode: 'strict',
 					catalogPrune: true,
 					dedupeDirectDeps: true,

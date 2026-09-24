@@ -3,6 +3,8 @@ packages: []
 audit:
   ignorePrune: true
 
+autoDedupe: true
+
 catalog:
   '@antfu/eslint-config': 9.5.1
   eslint: 10.11.0
