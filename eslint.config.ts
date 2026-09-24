@@ -32,7 +32,7 @@ const config: Promise<Linter.Config[]> = antfu(
 	{
 		files: ['pnpm-workspace.yaml'],
 		rules: {
-			'json-schema-validator/no-invalid': 'off', //temporary
+			'json-schema-validator/no-invalid': 'off', // temporary unitl v12.6 schema is published
 			'pnpm/yaml-enforce-settings': ['error', {
 				forbiddenFields: [
 					// TODO complete
