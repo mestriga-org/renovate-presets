@@ -1,0 +1,39 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"customManagers": [
+		{
+			"customType": "jsonata",
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "Azure/bicep",
+			"depTypeTemplate": "uses-with",
+			"description": "Updates the input specifying the bicep version of the Azure/bicep-deploy and anthony-c-martin/setup-bicep GHAs.",
+			"fileFormat": "yaml",
+			"managerFilePatterns": [
+				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
+				"/(^|/)action\\.ya?ml$/"
+			],
+			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/bicep-deploy(@|$)/i].{ \"currentValue\": with.bicep-version }",
+				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/i].{ \"currentValue\": with.version }"
+			],
+			"versioningTemplate": "semver"
+		},
+		{
+			// TODO filter out 'latest'
+			"customType": "jsonata",
+			"datasourceTemplate": "nuget",
+			"depNameTemplate": "Az",
+			"depTypeTemplate": "uses-with",
+			"description": "Updates the azPSVersion input of the Azure/powershell GHA.",
+			"fileFormat": "yaml",
+			"managerFilePatterns": [
+				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
+				"/(^|/)action\\.ya?ml$/"
+			],
+			"matchStrings": [
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/powershell(@|$)/i].{ \"currentValue\": with.azPSVersion }"
+			],
+			"registryUrlTemplate": "https://www.powershellgallery.com/api/v2"
+		}
+	]
+}

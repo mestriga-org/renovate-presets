@@ -14,74 +14,14 @@
 		":rebaseStalePrs",
 		":separateMultipleMajorReleases",
 		":timezone(America/Sao_Paulo)",
-		"customManagers:biomeVersions"
-	],
-	"customManagers": [
-		{
-			"customType": "jsonata",
-			"datasourceTemplate": "github-releases",
-			"depNameTemplate": "Azure/bicep",
-			"depTypeTemplate": "uses-with",
-			"description": "Updates the input specifying the bicep version of the Azure/bicep-deploy and anthony-c-martin/setup-bicep GHAs.",
-			"fileFormat": "yaml",
-			"managerFilePatterns": [
-				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
-				"/(^|/)action\\.ya?ml$/"
-			],
-			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/bicep-deploy(@|$)/i].{ \"currentValue\": with.bicep-version }",
-				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/i].{ \"currentValue\": with.version }"
-			],
-			"versioningTemplate": "semver"
-		},
-		{
-			// TODO filter out 'latest'
-			"customType": "jsonata",
-			"datasourceTemplate": "nuget",
-			"depNameTemplate": "Az",
-			"depTypeTemplate": "uses-with",
-			"description": "Updates the azPSVersion input of the Azure/powershell GHA.",
-			"fileFormat": "yaml",
-			"managerFilePatterns": [
-				"/^(workflow-templates|\\.(github|gitea|forgejo)/workflows)/[^/]+\\.ya?ml$/",
-				"/(^|/)action\\.ya?ml$/"
-			],
-			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/powershell(@|$)/i].{ \"currentValue\": with.azPSVersion }"
-			],
-			"registryUrlTemplate": "https://www.powershellgallery.com/api/v2"
-		}
+		"customManagers:biomeVersions",
+		"/custom-managers-preset",
+		"/opentofu-preset",
+		"/pnpm-preset"
 	],
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
-	"logLevelRemap": [
-		{
-			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
-			"matchMessage": "Failed to find required \"packages\" array in pnpm-workspace.yaml",
-			"newLogLevel": "warn"
-		},
-		{
-			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
-			"matchMessage": "Failed to parse pnpm-workspace.yaml",
-			"newLogLevel": "warn"
-		},
-		{
-			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
-			"matchMessage": "Failed to locate pnpm-workspace.yaml in a parent directory.",
-			"newLogLevel": "warn"
-		},
-		{
-			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
-			"matchMessage": "Failed to find a pnpm-lock.yaml sibling for the workspace.",
-			"newLogLevel": "warn"
-		},
-		{
-			"description": "v43.77 lib/modules/manager/npm/extract/pnpm.ts trace",
-			"matchMessage": "Didn't find the package in the pnpm workspace",
-			"newLogLevel": "warn"
-		}
-	],
 	// allows CalVer updates
 	"maxMajorIncrement": 100000,
 	/*
@@ -124,41 +64,6 @@
 			"matchDepNames": "mestriga-org/github-workflows",
 			"pinDigests": false
 		},
-		// #region OpenTofu
-		{
-			"description": "Override default registry URL for the terraform-module and terraform-provider data sources in *.tofu files",
-			"matchDatasources": ["terraform-{module,provider}"],
-			"matchFileNames": ["**/*.tofu"],
-			"registryUrls": ["https://registry.opentofu.org"]
-		},
-		{
-			// NOTE: overrideDepName made renovate run fail (2025-11-28)
-			"description": "Override package name for required_version terraform dependencies in *.tofu files.",
-			"matchDepNames": ["hashicorp/terraform"],
-			"matchDepTypes": ["required_version"],
-			"matchFileNames": ["**/*.tofu"],
-			"matchManagers": ["terraform"],
-			"overridePackageName": "opentofu/opentofu"
-		},
-		{
-			// NOTE: did not try to set overrideDepName
-			"description": "Override package name for terraform-version dependencies in .opentofu-version files.",
-			"matchDepNames": ["hashicorp/terraform"],
-			"matchFileNames": ["/(^|/)\\.opentofu-version$/"],
-			"matchManagers": ["terraform-version"],
-			"overridePackageName": "opentofu/opentofu"
-		},
-		{
-			"groupName": "opentofu monorepo",
-			"matchSourceUrls": ["https://github.com/opentofu/opentofu"],
-			"matchUpdateTypes": [
-				"digest",
-				"patch",
-				"minor",
-				"major"
-			]
-		},
-		// #endregion
 		{
 			"groupName": "workers-sdk monorepo",
 			"matchSourceUrls": ["https://github.com/cloudflare/workers-sdk"],
@@ -175,8 +80,5 @@
 	// and when rebaseWhen=auto (already disabled for free private GitHub repositories)
 	"platformAutomerge": false,
 	"rangeStrategy": "bump",
-	"semanticCommits": "enabled",
-	"terraform-version": {
-		"managerFilePatterns": ["/(^|/)\\.opentofu-version$/"]
-	}
+	"semanticCommits": "enabled"
 }
