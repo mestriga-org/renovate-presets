@@ -15,9 +15,9 @@
 		":separateMultipleMajorReleases",
 		":timezone(America/Sao_Paulo)",
 		"customManagers:biomeVersions",
-		"/custom-managers-preset",
-		"/opentofu-preset",
-		"/pnpm-preset"
+		"/presets/custom-managers",
+		"/presets/opentofu",
+		"/presets/pnpm"
 	],
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
