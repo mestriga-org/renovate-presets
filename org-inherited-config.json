@@ -19,8 +19,6 @@ All values configurable in the Mend App UI are overriden here, except for:
 		"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 		"extends": ["local>mestriga-org/renovate-config"]
 	},
-	// moves the default config file off the repo root
-	"onboardingConfigFileName": ".github/renovate.json",
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
 	// overrides configuration from the Mend App UI with the default
