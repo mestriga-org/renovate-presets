@@ -5,7 +5,7 @@ All values configurable in the Mend App UI are overriden here, except for:
 - Dependency Updates (when this is disabled, Renovate is not started for this repo)
 - Dependency Updates >> Renovate >> Automated PRs (when both this and 'Silent' are disabled, "dependencyDashboardApproval" is enabled with a catch-all packageRules)
 */
- // onboarding* settings are global-only
+// onboarding* settings are global-only
 {
 	"$schema": "https://docs.renovatebot.com/renovate-inherited-schema.json",
 	// enforces the default fork processing mode for the Mend Renovate App
