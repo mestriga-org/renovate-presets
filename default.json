@@ -42,7 +42,7 @@
 			// "https://github.com/renovatebot/renovate/blob/43.96.0/lib/config/presets/internal/helpers.preset.ts#L74-L85"
 			"description": "Convert pinned GitHub Action digests to SemVer.",
 			"extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$",
-			"matchDepTypes": ["action"],
+			"matchDepTypes": ["action", "workflow"],
 			"matchDatasources": ["github-tags"],
 			"versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
 		},
