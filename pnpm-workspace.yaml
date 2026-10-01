@@ -6,9 +6,8 @@ audit:
 autoDedupe: true
 
 catalog:
-  '@antfu/eslint-config': 9.5.1
+  '@mestriga-org/eslint-config': github:mestriga-org/eslint-config#62520a7a15eb511f74ae2be95413d4ed6f3e02c8
   eslint: 10.11.0
-  eslint-plugin-json-schema-validator: ^6.3.1
 catalogMode: strict
 
 catalogPrune: true
