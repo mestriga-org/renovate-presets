@@ -16,4 +16,4 @@ jobs:
   renovate-preset-validate:
     permissions:
       contents: read
-    uses: mestriga-org/github-workflows/.github/workflows/renovate-preset-validate.yml@main
+    uses: mestriga-org/public-workflows/.github/workflows/renovate-preset-validate.yml@main
