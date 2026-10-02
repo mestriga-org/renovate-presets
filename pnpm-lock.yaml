@@ -166,8 +166,8 @@ settings:
 catalogs:
   default:
     '@mestriga-org/eslint-config':
-      specifier: github:mestriga-org/eslint-config#62520a7a15eb511f74ae2be95413d4ed6f3e02c8
-      version: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/62520a7a15eb511f74ae2be95413d4ed6f3e02c8
+      specifier: github:mestriga-org/eslint-config#83dd747c4b8e184da820dcbe04c5e4b124faba77
+      version: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/83dd747c4b8e184da820dcbe04c5e4b124faba77
     eslint:
       specifier: 10.11.0
       version: 10.11.0
@@ -178,7 +178,7 @@ importers:
     devDependencies:
       '@mestriga-org/eslint-config':
         specifier: 'catalog:'
-        version: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/62520a7a15eb511f74ae2be95413d4ed6f3e02c8(@typescript-eslint/typescript-estree@8.71.0)(@typescript-eslint/utils@8.71.0)(@vue/compiler-sfc@3.5.43)(eslint@10.11.0)(typescript@6.0.3)
+        version: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/83dd747c4b8e184da820dcbe04c5e4b124faba77(@typescript-eslint/typescript-estree@8.71.0)(@typescript-eslint/utils@8.71.0)(@vue/compiler-sfc@3.5.43)(eslint@10.11.0)(typescript@6.0.3)
       eslint:
         specifier: 'catalog:'
         version: 10.11.0
@@ -401,8 +401,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@mestriga-org/eslint-config@https://codeload.github.com/mestriga-org/eslint-config/tar.gz/62520a7a15eb511f74ae2be95413d4ed6f3e02c8':
-    resolution: {gitHosted: true, integrity: sha512-pwWkkx3qsSgXy6BsgLYHSmHCI9P8yLZvYZi1dkeUs9IA5vq8idfbpx/8IaNR/WGAkFF+Ki6wJNaGtLD4wF4Luw==, tarball: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/62520a7a15eb511f74ae2be95413d4ed6f3e02c8}
+  '@mestriga-org/eslint-config@https://codeload.github.com/mestriga-org/eslint-config/tar.gz/83dd747c4b8e184da820dcbe04c5e4b124faba77':
+    resolution: {gitHosted: true, integrity: sha512-wTnOX8LejCcRawK3o0DE9V1F/+l+wvcHw+QyyFdO1SpZHc3s/TdQi9zFyoXq08bvVF1LQWfX23a+/7YkxEXK3w==, tarball: https://codeload.github.com/mestriga-org/eslint-config/tar.gz/83dd747c4b8e184da820dcbe04c5e4b124faba77}
     version: 0.0.0
     engines: {npm: <0}
 
@@ -1805,7 +1805,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@mestriga-org/eslint-config@https://codeload.github.com/mestriga-org/eslint-config/tar.gz/62520a7a15eb511f74ae2be95413d4ed6f3e02c8(@typescript-eslint/typescript-estree@8.71.0)(@typescript-eslint/utils@8.71.0)(@vue/compiler-sfc@3.5.43)(eslint@10.11.0)(typescript@6.0.3)':
+  '@mestriga-org/eslint-config@https://codeload.github.com/mestriga-org/eslint-config/tar.gz/83dd747c4b8e184da820dcbe04c5e4b124faba77(@typescript-eslint/typescript-estree@8.71.0)(@typescript-eslint/utils@8.71.0)(@vue/compiler-sfc@3.5.43)(eslint@10.11.0)(typescript@6.0.3)':
     dependencies:
       '@antfu/eslint-config': 9.5.1(@typescript-eslint/typescript-estree@8.71.0)(@typescript-eslint/utils@8.71.0)(@vue/compiler-sfc@3.5.43)(eslint@10.11.0)(typescript@6.0.3)
       eslint-plugin-json-schema-validator: 6.3.1(eslint@10.11.0)
