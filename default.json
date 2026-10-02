@@ -30,6 +30,12 @@
 	*/
 	"minimumReleaseAge": "3 days",
 	"minimumReleaseAgeBehaviour": "timestamp-optional",
+	"nodenv": {
+		"ignoreUnstable": false
+	},
+	"npm": {
+		"minimumReleaseAgeBehaviour": "timestamp-required"
+	},
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
@@ -45,15 +51,6 @@
 			"matchDepTypes": ["action", "workflow"],
 			"matchDatasources": ["github-tags"],
 			"versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
-		},
-		{
-			"description": "Require timestamps for the npm data source",
-			"matchDatasources": ["npm"],
-			"minimumReleaseAgeBehaviour": "timestamp-required"
-		},
-		{
-			"matchManagers": ["nodenv"],
-			"ignoreUnstable": false
 		},
 		{
 			"description": "Do not require Minimum Release Age for update types that are controlled by the package manager",
