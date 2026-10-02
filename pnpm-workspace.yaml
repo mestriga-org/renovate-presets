@@ -6,7 +6,7 @@ audit:
 autoDedupe: true
 
 catalog:
-  '@mestriga-org/eslint-config': github:mestriga-org/eslint-config#62520a7a15eb511f74ae2be95413d4ed6f3e02c8
+  '@mestriga-org/eslint-config': github:mestriga-org/eslint-config#83dd747c4b8e184da820dcbe04c5e4b124faba77
   eslint: 10.11.0
 catalogMode: strict
 
