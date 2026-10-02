@@ -30,6 +30,9 @@
 	*/
 	"minimumReleaseAge": "3 days",
 	"minimumReleaseAgeBehaviour": "timestamp-optional",
+	"nodenv": {
+		"ignoreUnstable": true
+	},
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
