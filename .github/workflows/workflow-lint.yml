@@ -1,0 +1,15 @@
+# This workflow is managed by gh actions-lock.
+
+on:
+  merge_group:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions: { }
+jobs:
+  workflow-lint:
+    permissions:
+      contents: read
+    uses: mestriga-org/public-workflows/.github/workflows/workflow-lint.yml@main
