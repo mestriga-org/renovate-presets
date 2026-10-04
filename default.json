@@ -13,7 +13,6 @@
 		":prHourlyLimitNone",
 		":separateMultipleMajorReleases",
 		":timezone(America/Sao_Paulo)",
-		"customManagers:biomeVersions",
 		"/presets/custom-managers",
 		"/presets/opentofu",
 		"/presets/pnpm"
