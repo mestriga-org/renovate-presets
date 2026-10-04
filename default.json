@@ -17,9 +17,6 @@
 		"/presets/opentofu",
 		"/presets/pnpm"
 	],
-	"constraints": {
-		"ghActionsLock": ""
-	},
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
 	"lockFileMaintenance": { "automerge": true },
