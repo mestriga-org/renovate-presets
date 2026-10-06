@@ -10,7 +10,6 @@
 		// has repo config requirements: https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts
 		":enableVulnerabilityAlertsWithAdditionalLabel(security)",
 		":label(dependencies)", // same as Dependabot's default
-		":prHourlyLimitNone",
 		":separateMultipleMajorReleases",
 		":timezone(America/Sao_Paulo)",
 		"/presets/custom-managers",
