@@ -21,6 +21,9 @@
 	},
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
+	"github-actions": {
+		"skipArtifactsUpdate": true
+	},
 	"lockFileMaintenance": { "automerge": true },
 	// allows CalVer updates
 	"maxMajorIncrement": 100000,
