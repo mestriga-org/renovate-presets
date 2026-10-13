@@ -17,7 +17,7 @@
 		"/presets/pnpm"
 	],
 	"constraints": {
-		"ghActionsLock": "v0.2.0"
+		"ghActionsLock": "v0.1.7-rc.1"
 	},
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
