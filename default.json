@@ -64,11 +64,6 @@
 			"minimumReleaseAge": null
 		},
 		{
-			"matchDatasources": "github-digest",
-			"matchDepNames": "mestriga-org/github-workflows",
-			"pinDigests": false
-		},
-		{
 			"groupName": "workers-sdk monorepo",
 			"matchSourceUrls": ["https://github.com/cloudflare/workers-sdk"],
 			"matchUpdateTypes": [
