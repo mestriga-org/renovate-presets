@@ -18,4 +18,6 @@
 
 - renovate does not support remediation for vulnerable transitive dependencies: https://docs.renovatebot.com/key-concepts/minimum-release-age/#what-happens-to-transitive-dependencies
 
+- lock-file-maintenance branch is left behind when lockfiles cease to be present
+
 ## Gotchas
