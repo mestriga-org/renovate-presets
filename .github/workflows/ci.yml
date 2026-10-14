@@ -15,6 +15,9 @@ jobs:
   git-check:
     permissions: { contents: read }
     uses: mestriga-org/public-workflows/.github/workflows/git-check.yml@main
+  renovate-preset-validate:
+    permissions: { contents: read }
+    uses: mestriga-org/public-workflows/.github/workflows/renovate-preset-validate.yml@main
   renovate-status-check:
     permissions: { statuses: read }
     uses: mestriga-org/public-workflows/.github/workflows/renovate-status-check.yml@main
@@ -28,6 +31,7 @@ jobs:
     needs:
       - git-check
       - renovate-status-check
+      - renovate-preset-validate
       - workflow-lint
     steps:
       - name: Fail
