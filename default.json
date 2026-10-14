@@ -24,7 +24,10 @@
 	"ignorePresets": [
 		"helpers:pinGitHubActionDigests"
 	],
-	"lockFileMaintenance": { "automerge": true },
+	"lockFileMaintenance": {
+		"automerge": true,
+		"prHourlyLimit": 0
+	},
 	// allows CalVer updates
 	"maxMajorIncrement": 100000,
 	/*
