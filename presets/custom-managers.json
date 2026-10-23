@@ -13,7 +13,7 @@
 				"/(^|/)action\\.ya?ml$/"
 			],
 			"matchStrings": [
-				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/bicep-deploy(@|$)/i].{ \"currentValue\": with.bicep-version }",
+				"$append(jobs.*, runs).steps[uses ~> /^Azure\\/bicep-deploy(@|$)/i].{ \"currentValue\": with.'bicep-version' }",
 				"$append(jobs.*, runs).steps[uses ~> /^anthony-c-martin\\/setup-bicep(@|$)/i].{ \"currentValue\": with.version }"
 			],
 			"versioningTemplate": "semver"
