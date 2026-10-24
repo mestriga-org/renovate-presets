@@ -18,9 +18,6 @@
 	],
 	"dependencyDashboardLabels": ["dependencies"],
 	"dependencyDashboardOSVVulnerabilitySummary": "all",
-	"ignorePresets": [
-		"helpers:pinGitHubActionDigests"
-	],
 	"lockFileMaintenance": {
 		"automerge": true,
 		"prHourlyLimit": 0
