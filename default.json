@@ -43,16 +43,6 @@
 			"description": "Automerge non-breaking updates",
 			"matchJsonata": ["$not(isBreaking)"]
 		},
-		/*
-		{
-			// based on helper:pinGitHubActionDigestsToSemver
-			// "https://github.com/renovatebot/renovate/blob/43.96.0/lib/config/presets/internal/helpers.preset.ts#L74-L85"
-			"description": "Convert pinned GitHub Action digests to SemVer.",
-			"extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$",
-			"matchDepTypes": ["action", "workflow"],
-			"matchDatasources": ["github-tags"],
-			"versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
-		},*/
 		{
 			"description": "Do not require Minimum Release Age for update types that are controlled by the package manager",
 			"matchUpdateTypes": ["lockFileMaintenance"],
