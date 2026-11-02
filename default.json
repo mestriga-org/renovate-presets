@@ -30,9 +30,6 @@
 	*/
 	"minimumReleaseAge": "3 days",
 	"minimumReleaseAgeBehaviour": "timestamp-optional",
-	"nodenv": {
-		"ignoreUnstable": false
-	},
 	"npm": {
 		"minimumReleaseAgeBehaviour": "timestamp-required"
 	},
